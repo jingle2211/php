@@ -1,0 +1,438 @@
+::-moz-selection {
+  background: #14129c;
+  color: #fff;
+}
+
+::selection {
+  background: #14129c;
+  color: #fff;
+}
+
+/* Default Hover Color */
+a:hover, a:focus, a:active {
+  color: #14129c;
+}
+
+.button:hover {
+  background: #E91E22;
+}
+
+/* Yellow Theme Color */
+.theme-yellow.nevy-bg .vehicle-title {
+  color: #14129c;
+}
+
+.theme-yellow .vehicle-top-meta .meta-item {
+  color: #14129c;
+}
+
+.theme-yellow .vehicle-bottom-content {
+  background: #eeeeee;
+}
+
+.theme-yellow-bg {
+  background: #14129c;
+}
+
+.theme-yellow-bg .google-map-area .contact-style-one .social-icon a {
+  color:#14129c;
+}
+
+.yellow-color,
+.color-yellow {
+  color: #fcfcfc !important;
+}
+
+.yellow-button {
+  background-color:#14129c !important;
+}
+
+.yellow-button:hover {
+  background-color: rgba(255, 72, 24, 0.9);
+}
+
+.yellow-border {
+  border-color: #14129c !important;
+}
+
+.yellow-bg {
+  background: #14129c;
+}
+
+.yellow-theme .heading-content.style-one.border h2.title:before {
+  background-color: #ea0000;
+}
+
+.yellow-theme .item-navigation .next-item {
+  background-color: #ea0000!important;
+  border-color:#ea0000 !important;
+}
+
+.yellow-theme .item-navigation .next-item:before {
+  border-bottom-color: #ea0000 !important;
+}
+
+.yellow-theme .vehicle-top-meta .vehicle-title,
+.yellow-theme .vehicle-top-meta .meta-item {
+  color: #14129c;
+}
+
+.yellow-theme .widget .widget-title {
+  color: #fff;
+  border-color: #fff;
+}
+
+.yellow-theme .widget .button {
+  background: #14129c;
+}
+
+.yellow-theme .widget.widget_menu ul li:before {
+  background: #14129c;
+}
+
+.yellow-theme .widget.widget_hot_contact ul li i {
+  color: #14129c;
+}
+
+.yellow-theme .widget.widget_newsletter .input-group-btn span {
+  color: #fff;
+}
+
+.yellow-theme .social-profile a:hover {
+  color: #14129c;
+}
+
+.yellow-theme a:hover, .yellow-theme a:focus, .yellow-theme a:active {
+  color: #14129c;
+}
+
+.yellow-theme .button:hover {
+  background: #14129c;
+}
+
+.yellow-theme .input i {
+  color:#14129c;
+}
+
+.yellow-theme .advanced-search-btn {
+  color: #14129c;
+}
+
+.yellow-theme button {
+  background: #14129c;
+}
+
+.yellow-theme .title span,
+.yellow-theme .subtitle span {
+  color: #14129c;
+}
+
+.yellow-theme.pricing-table-item .pricing-image {
+  background: #14129c;
+}
+
+.yellow-theme.pricing-table-item .price .price-subtille {
+  color: #14129c;
+}
+
+.yellow-theme.pricing-table-item .price .price-title:after {
+  background: #14129c;
+}
+
+.yellow-theme .panel-title i {
+  background: #14129c;
+}
+
+.yellow-theme .highlight {
+  color: #14129c;
+}
+
+.yellow-theme .vehicle-filter-area .nav-tabs li.active a {
+  background: #14129c !important;
+}
+
+.yellow-theme .image-content .renticon {
+  color: #14129c;
+}
+
+.yellow-theme .button:hover {
+  background: #14129c;
+}
+
+.theme-yellow-bg.contact-style-one:before {
+  background-image: -webkit-linear-gradient(0deg, #ffcc00 15px, #333 0);
+}
+
+/* Blue Theme Color */
+.theme-blue a:hover, .theme-blue a:focus, .theme-blue a:active {
+  color: #2e93e4;
+}
+
+.theme-blue .button:hover {
+  background: #2e93e4;
+}
+
+.theme-blue .vehicle-bottom-content {
+  background: #2e93e4;
+}
+
+.theme-blue .heading-content.style-one.border h2.title:before {
+  background-color: #2e93e4;
+}
+
+.theme-blue .item-navigation .next-item {
+  background-color: #2e93e4 !important;
+  border-color: #2e93e4 !important;
+}
+
+.theme-blue .item-navigation .next-item:before {
+  border-bottom-color: #2e93e4 !important;
+}
+
+.theme-blue .vehicle-top-meta .vehicle-title,
+.theme-blue .vehicle-top-meta .meta-item {
+  color: #2e93e4;
+}
+
+.theme-blue-bg {
+  background: #2e93e4;
+}
+
+.theme-blue-bg.contact-area .contact .social-icon i {
+  color: #2e93e4;
+}
+
+.blue-bg {
+  background: #2e93e4;
+}
+
+.theme-blue .widget .widget-title {
+  color: #2e93e4;
+  border-color: #2e93e4;
+}
+
+.theme-blue .widget .button {
+  background: #2e93e4;
+}
+
+.theme-blue .widget.widget_menu ul li:before {
+  background: #2e93e4;
+}
+
+.theme-blue .widget.widget_hot_contact ul li i {
+  color: #2e93e4;
+}
+
+.theme-blue .widget.widget_newsletter .input-group-btn span {
+  color: #2e93e4;
+}
+
+.theme-blue .social-profile a:hover {
+  color: #2e93e4;
+}
+
+.theme-blue .input i {
+  color: #ea0000;
+}
+
+.theme-blue .advanced-search-btn {
+  color: #2e93e4;
+}
+
+.theme-blue button {
+  background: #ea0000;
+}
+
+.theme-blue button:hover {
+  background-color: rgba(46, 147, 228, 0.9);
+}
+
+.theme-blue .title span,
+.theme-blue .subtitle span {
+  color: #2e93e4;
+}
+
+.theme-blue.pricing-table-item .pricing-image {
+  background: #2e93e4;
+}
+
+.theme-blue.pricing-table-item .price .price-subtille {
+  color: #2e93e4;
+}
+
+.theme-blue.pricing-table-item .price .price-title:after {
+  background: #2e93e4;
+}
+
+.theme-blue .panel-title i {
+  background: #2e93e4;
+}
+
+.theme-blue .highlight {
+  color: #2e93e4;
+}
+
+.theme-blue .vehicle-filter-area .nav-tabs li.active a {
+  background: #2e93e4 !important;
+}
+
+.theme-blue .vehicle-filter-area .nav-tabs li:hover a {
+  background: #2e93e4 !important;
+}
+
+.theme-blue .image-content .renticon {
+  color: #2e93e4;
+}
+
+.theme-blue .button:hover {
+  background: #2e93e4;
+}
+
+.blue-color {
+  color: #2e93e4;
+}
+
+.blue-button {
+  background-color: #2e93e4;
+}
+
+.blue-button:hover {
+  background-color: rgba(46, 147, 228, 0.9);
+}
+
+.theme-blue-bg.contact-style-one:before {
+  background-image: -webkit-linear-gradient(0deg, #2e93e4 15px, #fff 0);
+}
+
+/* Red Theme Color */
+.theme-red .vehicle-title {
+  color: #FF4818;
+}
+
+.theme-red .vehicle-top-meta .meta-item {
+  color: #FF4818;
+}
+
+.theme-red .vehicle-bottom-content {
+  background: #FF4818;
+}
+
+.theme-red a:hover, .theme-red a:focus, .theme-red a:active {
+  color: #FF4818;
+}
+
+.theme-red .button:hover {
+  background: #ea0000;
+}
+
+.theme-red .vehicle-bottom-content {
+  background: #ea0000;
+}
+
+.theme-red .heading-content.style-one.border h2.title:before {
+  background-color: #ea0000;
+}
+
+.theme-red .item-navigation .next-item {
+  background-color: #ea0000 !important;
+  border-color: #ea0000 !important;
+}
+
+.theme-red .item-navigation .next-item:before {
+  border-bottom-color: #ea0000 !important;
+}
+
+.theme-red .vehicle-top-meta .vehicle-title,
+.theme-red .vehicle-top-meta .meta-item {
+  color: #ea0000;
+}
+
+.theme-red .widget .widget-title {
+  color: #ea0000;
+  border-color: #ea0000;
+}
+
+.theme-red .widget .button {
+  background: #ea0000;
+}
+
+.theme-red .widget.widget_menu ul li:before {
+  background: #ea0000;
+}
+
+.theme-red .widget.widget_hot_contact ul li i {
+  color: #ea0000;
+}
+
+.theme-red .widget.widget_newsletter .input-group-btn span {
+  color: #ea0000;
+}
+
+.theme-red .social-profile a:hover {
+  color: #ea0000;
+}
+
+.theme-red .input i {
+  color: #ea0000;
+}
+
+.theme-red .advanced-search-btn {
+  color: #ea0000;
+}
+
+.theme-red button {
+  background: #ea0000;
+}
+
+.theme-red .title span,
+.theme-red .subtitle span {
+  color: #ea0000;
+}
+
+.theme-red.pricing-table-item .pricing-image {
+  background:#ea0000;
+}
+
+.theme-red.pricing-table-item .price .price-subtille {
+  color:#ea0000;
+}
+
+.theme-red.pricing-table-item .price .price-title:after {
+  background: #ea0000;
+}
+
+.theme-red .panel-title i {
+  background: #ea0000;
+}
+
+.theme-red .highlight {
+  color: #ea0000;
+}
+
+.theme-red .vehicle-filter-area .nav-tabs li.active a {
+  background: #ea0000 !important;
+}
+
+.theme-red .image-content .renticon {
+  color: #ea0000;
+}
+
+.theme-red .button:hover {
+  background: #ea0000;
+}
+
+.red-color {
+  color: #ea0000;
+}
+
+.red-button {
+  background-color: #ea0000;
+}
+
+.red-button:hover {
+  background-color: rgba(255, 72, 24, 0.9);
+}
+
+.theme-red-bg.contact-style-one:before {
+  background-image: -webkit-linear-gradient(0deg, #ea0000 15px, #fff 0);
+}
