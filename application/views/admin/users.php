@@ -25,14 +25,7 @@
         <span aria-hidden="true">×</span> </button>
         <?= $this->session->flashdata('success'); ?>
         </div>
-        <?php } ?>
-        <?php if ($this->session->flashdata('error')) { ?>
-        <div class="alert bg-danger alert-dismissible" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">×</span> </button>
-        <?= $this->session->flashdata('error'); ?>
-        </div>
-        <?php } ?>
+        <?php } ?>>
 
         <div class="row clearfix">
         <div class="col-lg-12 col-md-12">
@@ -48,8 +41,8 @@
             <thead>
             <tr>
             <th>S.No.</th>
-            <th> Branch</th>
-            <th> User_type</th>
+            <th>Branch</th>
+            <th>User_type</th>
             <th>Name</th>
             <th>Mobile Number</th>
             <th>Username</th>

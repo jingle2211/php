@@ -98,13 +98,6 @@
                                  <input type="text" class="form-control" name="username"  value="<?= $value->username; ?>" style="border:1px solid; padding: 5px;">
                                      </div>
                                     </div>
-                                     
-                                    <?php if ($this->session->flashdata('message')) {
-                                        # code...
-                                        echo "<p style='color:red'>".$this->session->flashdata('message')."</p>";
-                                    } ?>
-                                    
-
                   <div class="submit-area text-center">
                      <input type="submit" class="btn-hover color-1" name="submit" value="Update">
                               </div>

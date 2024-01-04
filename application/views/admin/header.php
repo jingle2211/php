@@ -154,7 +154,7 @@
 
         <li class="bb">
         <a href="#" onClick="return false;" class="menu-toggle">
-        <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i><span>Package Details</span> </a>
+        <i class="fa fa-star"></i><span>Package Details</span> </a>
         <ul class="ml-menu">
         <li>  <a href="<?= base_url('Admin/add_packages'); ?>">Add New Package</a> </li>
         <li> <a href="<?= base_url('Admin/manage_packages'); ?>">Manage Package</a></li>
@@ -209,9 +209,11 @@
             <a href="#" onClick="return false;" class="menu-toggle"><i class="fa fa-university" aria-hidden="true"></i>
             <span>Finance Management</span> </a>
             <ul class="ml-menu">
-             <li> <a href="<?= base_url('Admin/add_wallet'); ?>" target="_blank">Add wallet </a> </li> 
-             <li> <a href="<?= base_url('Admin/wallet'); ?>" target="_blank">Manage wallet </a> </li> 
-             <li> <a href="<?= base_url('Admin/transection'); ?>">Transection Details </a> </li>       
+            <li> <a href="<?= base_url('Finance/Users'); ?>" target="_blank">Manage Expense </a> </li> 
+             <li> <a href="<?= base_url('Admin/add_wallet'); ?>">Add Group </a> </li> 
+             <li> <a href="<?= base_url('Admin/wallet'); ?>">Manage Group </a> </li> 
+             <li> <a href="<?= base_url('Admin/ledger'); ?>"> Add Ledger </a></li>
+             <li> <a href="<?= base_url('Admin/transection'); ?>">Ledger Details </a> </li>       
              </ul>
             </li>
         </ul>

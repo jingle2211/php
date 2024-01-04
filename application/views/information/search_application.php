@@ -6,34 +6,34 @@
     font-weight: 500;
     background: linear-gradient(45deg, #5e79e0, #f0a3a3);
     margin-top: 25px;
-}
+  }
 button {
     width: 33%;
     margin: 13px;
     padding: 5px;
     border-radius: 15px;
-    
-}
+
+    }
+
   </style>
 <section class="content">
     <div class="block-header">
-      <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <ul class="breadcrumb breadcrumb-style ">
-            <li class="breadcrumb-item">
-              <h4 class="page-title">Profile</h4>
-            </li>
-            <li class="breadcrumb-item bcrumb-1">
-              <a href="<?= base_url('user'); ?>">
-                <i class="fas fa-home"></i>Back to Home</a>
-            </li>
-            <li class="breadcrumb-item active">Search Application</li>
-          </ul>
-        </div>
-      </div>
+    <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <ul class="breadcrumb breadcrumb-style ">
+    <li class="breadcrumb-item">
+    <h4 class="page-title">Profile</h4>
+    </li>
+    <li class="breadcrumb-item bcrumb-1">
+    <a href="<?= base_url('user'); ?>">
+    <i class="fas fa-home"></i>Home</a></li>
+    <li class="breadcrumb-item active">Search Application</li>
+    </ul>
+    </div>
+    </div>
     </div>
 
-
+    
 <div class="container">
     <h2>SEARCH/ EDIT APPLICATION</h2> 
     <div class="row">
@@ -83,7 +83,7 @@ button {
             <th>Dispatch</th>
             <th>Action</th>
         </tr>
-        <!-- <//?php if($allapplication): $i = 1;  foreach ($allapplication as $data): ?> -->
+         <//?php if($visa_application): $i = 1;  foreach ($visa_application as $data): ?> 
         <tr>
             <td><?php echo $visaApplication->Docket_No; ?></td>
             <td><?php echo $visaApplication->corporate_name; ?></td>
@@ -95,9 +95,9 @@ button {
             <td><?php echo $visaApplication->Staff; ?></td>
             <td><?php echo $visaApplication->Remark; ?></td>
             <td><?php echo $visaApplication->Dispatch; ?></td>
-            <!-- <td><a href="<//?= base_url('Information/edit_application/' . $data['id']); ?>">Edit</a></td> -->
+             <!-- <td><a href="<//?= base_url('information/edit_application/' . $all['id']); ?>">Edit</a></td> -->
         </tr>
-        <!-- <//?php endforeach; endif;  ?> -->
+        <//?php endforeach; endif;  ?> 
     </table>
 <?php else: ?>
     <h2>Application Details Not Found!</h2>

@@ -13,8 +13,7 @@
               <a href="<?= base_url('Admin/dashboard'); ?>">
                 <i class="fas fa-home"></i> Home</a>
             </li>
-
-            <li class="breadcrumb-item active">Add Wallet Amount</li>
+            <li class="breadcrumb-item active">Group Master</li>
           </ul>
         </div>
       </div>
@@ -31,11 +30,26 @@
   <div class="row">
          <!-- Contact Form  -->
         <div class="contact-form">
-            <h3 class="text-center">Wallet INFORMATION</h3>
+            <h3 class="text-center">Group Master</h3>
             <form method="post">
+            <div class="row">
+            <div class="form-group col-md-2">
+    <label>Group Code:</label>
+</div>
+<div class="form-group col-md-4">
+    <input type="Code" name="code" value="<?php echo isset($generatedCode) ? $generatedCode : ''; ?>" placeholder="group code" class="form-control" readonly>
+</div>
+
+<div class="form-group col-md-2">
+<label>Group Nmae:</label>
+</div>
+<div class="form-group col-md-4">
+<input type="text" name="group" placeholder="Group Name" class="form-control">
+</div>
+            </div>
                 <div class="row">
                   <div class="form-group col-md-2">
-                 <label>User Name:<span>*</span></label>
+                 <label>Select User:<span>*</span></label>
                   </div>
                   <div class="col-lg-4 col-md-4 col-xs-12">
                   <select name="name" id="user" aria-placeholder="Select user" class="form-control" required >
@@ -67,7 +81,7 @@ foreach ($user as $qu) {
                   <input type="text" name="amount" placeholder="Amount Added" class="form-control"  id="amount">
                   </div>
                     <div class="form-group col-md-2">
-                    <label>Branch:</label>
+                    <label>Select Branch:</label>
                     </div>
                     <div class="col-lg-4 col-md-4 col-xs-12">
                   <select name="branch" id="branch" aria-placeholder="Select Branch" class="form-control" required >
@@ -96,7 +110,7 @@ foreach ($branch as $qu) {
 </div>
 
   <div class="submit-area text-center">
-  <button class="btn-hover submit-area2" type="submit"> <i class="fa fa-paper-plane" aria-hidden="true"></i>Submit</button>
+  <button class="btn-hover submit-area2" type="submit">Submit</button>
   </div>
   </form>
   </div>

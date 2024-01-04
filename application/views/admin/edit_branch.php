@@ -74,11 +74,7 @@
                     <input type="text" name="city" class="form-control" value="<?= $item->city; ?>" style="border:1px solid;  padding-left:10px;"> 
                     </div>
                     </div>
-                  </div>
-          
-                    <?php if ($this->session->flashdata('message')) {
-                      echo "<p style='color:red'>".$this->session->flashdata('message')."</p>";
-                         } ?>                               
+                  </div>                               
    <div class="submit-area text-center">
    <input type="submit" class="btn-hover color-1" name="submit" value="Update">
   </div>

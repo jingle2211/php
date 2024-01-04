@@ -50,10 +50,7 @@
              <div class="form-group">
              <input type="text"  name="name" class="form-control title" value="<?= $details->name; ?>" style="border:1px solid; padding-left:10px;"> 
             </div>                        
-         <?php if ($this->session->flashdata('message')) {
-                      # code...
-               echo "<p style='color:red'>".$this->session->flashdata('message')."</p>";
-              } ?>                   
+                        
              <div class="form-group">
              <input type="submit" class="btn-hover color-1" name="submit" value="Update">
             </div>                                                  

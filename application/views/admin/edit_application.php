@@ -64,10 +64,7 @@
             <label for="email_address">Date of Travel:</label>
             <div class="form-group">                                          
             <input type="date" class="form-control" name="date_of_travel"  value="<?= $allapplication->date_of_travel; ?>">                                                        
-            </div>
-                                     
-       
-                                    
+            </div>                         
         <div class="form-group">
         <input type="submit" name="submit" value="Update">
         </div>

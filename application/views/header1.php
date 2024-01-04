@@ -135,7 +135,7 @@
             </div><!-- /.row -->
         </div><!-- /.container -->
     </header><!-- /.head-area -->
-iv><!-- /.header-modal-area -->
+<div><!-- /.header-modal-area -->
 
     <!-- ====== Header Nav Area ====== --> 
 	

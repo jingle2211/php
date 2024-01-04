@@ -66,18 +66,10 @@
 										<textarea  class="form-control title" rows="4"   placeholder="description" name="description" value="<?= $details['description']; ?>" required></textarea>
 										</div>
 									</div>
-                                    
-                                    <?php if ($this->session->flashdata('message')) {
-                                        # code...
-                                        echo "<p style='color:red'>".$this->session->flashdata('message')."</p>";
-                                    } ?>
-                                    
-
-                                    <div class="form-group">
-                                      <button class="btn-hover color-1" type="submit">Update</button>
-                                    </div>
-                            
-                            </div>
+                    <div class="form-group">
+                    <button class="btn-hover color-1" type="submit">Update</button>
+                     </div>
+           </div>
                             </div>
                             
             </div>

@@ -5,12 +5,13 @@ class Admin extends CI_Controller
   function __construct()
   {
     parent::__construct();
-   
+
 
     $this->load->library('email');
     if (!$this->session->userdata('admin')):
       redirect('Adminlogin');
     endif; /// login redirect
+
     $this->load->model(array ('Model_Admin', 'Model_Login', 'Hello_Model', 'User_model', 'subscribers_model', 'Menu_model', 'Visa_model', 'Add_model', 'Dynamic_dependent_model'));
     $this->load->library('form_validation');
 
@@ -246,7 +247,7 @@ class Admin extends CI_Controller
   {
     $data['admind'] = $this->Model_Admin->get_admin();
     $data['wallets'] = $this->Model_Admin->get_wallets();
-    $data['transections'] = $this->Model_Admin->get_transections();
+    //$data['transections'] = $this->Model_Admin->get_transections();
     $this->load->view('admin/profile', $data);
   }
 
@@ -1463,18 +1464,33 @@ public function branch_list()
 
 ////////////   Add Wallet    /////////////////////
 
+private function generateGroupCode() {
+  // Generate your code here
+  $codeLength = 4; // You can adjust the length of the code
+  $characters = '0123456789';
+  $generatedCode = '';
+  for ($i = 0; $i < $codeLength; $i++) {
+      $generatedCode .= $characters[rand(0, strlen($characters) - 1)];
+  }
+  return $generatedCode;
+}
+
 public function add_wallet()
 {
   $this->load->model('Model_Admin');
   $data['admin'] = $this->Model_Admin->get_admin();
   $data['branch'] = $this->Model_Admin->get_all_branch();
   $data['user'] = $this->Model_Admin->get_all_user();
+
+  $generatedCode = $this->generateGroupCode();
+  $data['generatedCode'] = $generatedCode;
+
   $this->load->view('admin/add_wallet', $data);
   if ($this->input->post()):
     $data = $this->input->post();
     //print_r($data);
     if ($this->Model_Admin->insert_wallet($data)):
-      $this->session->set_flashdata('success', '<b> Amount Added successfully!</b>');
+      $this->session->set_flashdata('success', '<b> Group/Amount Added successfully!</b>');
       redirect('Admin/wallet');
     else:
       $this->session->set_flashdata('error', '<b>error !! Please Try Again</b>');
@@ -1531,29 +1547,55 @@ public function wallet()
   public function edit_transection($id) {
     if ($this->input->post('submit')) {
         $data = array(
-            'visa_fee' => $this->input->post('visa_fee'),
-            'service_fee' => $this->input->post('service_fee'),
-            'embassy_fee' => $this->input->post('embassy_fee'),
-            'miscellaneous' => $this->input->post('miscellaneous'),
-            'bill_no' => $this->input->post('bill_no'),
-            'total_amount' => $this->input->post('total_amount')
+            'name' => $this->input->post('name'),
+            'amount' => $this->input->post('amount'),
+            'ledger' => $this->input->post('ledger'),
+            'group' => $this->input->post('group')
+            // 'bill_no' => $this->input->post('bill_no'),
+            // 'total_amount' => $this->input->post('total_amount')
         );
         $this->Model_Admin->update_transection($id, $data);
         redirect('Admin');
     }
     $data['transection'] = $this->Model_Admin->get_transection($id);
     $this->load->view('admin/edit_transection', $data);
-}
+}          
 
   public function delete_transection($id)
   {
     $con = array('id' => $id);
-    if ($this->Model_Admin->delete_transection('transection', $con))
+    if ($this->Model_Admin->delete_transection('ivs_ledger', $con))
       $this->session->set_flashdata('success', '<div class=" alert alert-success">Deleted successfully</div>');
     else
       $this->session->set_flashdata('error', '<div class="alert-danger alert">try again !!!</div>');
     redirect($_SERVER['HTTP_REFERER']);
   }
+
+////////////   Add Ledger    /////////////////////
+  public function ledger()
+  {
+    $this->load->model('Model_Admin');
+    $data['admin'] = $this->Model_Admin->get_admin();
+    $data['group'] = $this->Model_Admin->get_all_ledger();
+
+    $generatedCode = $this->generateGroupCode();
+    $data['generatedCode'] = $generatedCode;
+
+    $this->load->view('admin/ledger', $data);
+    if ($this->input->post()):
+      $data = $this->input->post();
+      //print_r($data);
+      if ($this->Model_Admin->insert_ledger($data)):
+        $this->session->set_flashdata('success', '<b> Ledger Added successfully!</b>');
+        redirect('Admin/transection');
+      else:
+        $this->session->set_flashdata('error', '<b>error !! Please Try Again</b>');
+        redirect('Admin/ledger');
+      endif;
+  
+    endif;
+  }
+
 
 //////////////////    News Latter       ///////////////////
 public function add_latter()

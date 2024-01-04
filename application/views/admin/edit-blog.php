@@ -86,12 +86,6 @@
                                         <input type="text" class="form-control" placeholder="Meta Discription" name="metades" required value="<?= $details['metades']; ?>">
                                     </div>
                                      
-                                    <?php if ($this->session->flashdata('message')) {
-                                        # code...
-                                        echo "<p style='color:red'>".$this->session->flashdata('message')."</p>";
-                                    } ?>
-                                    
-
                                     <div class="form-group">
                                       <button class="btn-hover color-1" type="submit">Update</button>
                                     </div>

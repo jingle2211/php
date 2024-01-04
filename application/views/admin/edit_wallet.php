@@ -56,11 +56,7 @@
                     <div class="form-group">
                     <input type="text" name="branch" class="form-control" value="<?= $wallet->branch; ?>"> 
                     </div>
-          
-                    <?php if ($this->session->flashdata('message')) {
-                      echo "<p style='color:red'>".$this->session->flashdata('message')."</p>";
-                         } ?>
-                                 
+   
    <div class="submit-area text-center">
    <input type="submit" class="btn-hover color-1" name="submit" value="Update">
   </div>

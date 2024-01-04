@@ -89,12 +89,6 @@
                                         <input type="text" class="form-control" placeholder="Meta Discription" name="title2" required value="<?= $details['title2']; ?>">
                                     </div>
                                      
-                                    <?php if ($this->session->flashdata('message')) {
-                                        # code...
-                                        echo "<p style='color:red'>".$this->session->flashdata('message')."</p>";
-                                    } ?>
-                                    
-
                                     <div class="form-group">
                                     <input type="submit" class="btn-hover color-1" name="submit" value="Update">
                                     </div>
@@ -125,27 +119,4 @@
     transition: width 3s;
 }
 #urlp{border: 1px solid; color: #7e7e7e; padding: 6px;   }
-
 </style>
-<!-- <script type="text/javascript">
-var base;        
-  base = "<?= base_url(); ?>"
-  
-$(document).ready(function(){
-  $(".title").blur(function(){
-   var title = $("#title").val();
-   var spaci = title.replace(/([!@#$(%^&*_+-=.,"';:'])+/g, '');
- var sapac = spaci.replace(/\s+/g,' ').trim();
- var final = sapac.toLowerCase();
- var link = final.replace(/\s/gi, "-");
-  //alert(link);
-   $.post(base+'Admin/slug', {slug: link}, function(result){
-    //alert(result);
-   $("#url").text(result); 
-   $('#red').attr('href',base+result);
-   $('#inputurl').attr('value',result);
-  });
-   
-  });
-}); 
-    </script> -->

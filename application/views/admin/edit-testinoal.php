@@ -65,17 +65,10 @@
                                     <div class="form-group">
                                         <input type="number" class="form-control"   name="orderno" value="<?= $details['orderno']; ?>">
                                     </div>
-                                     
-                                    <?php if ($this->session->flashdata('message')) {
-                                        # code...
-                                        echo "<p style='color:red'>".$this->session->flashdata('message')."</p>";
-                                    } ?>
-                                    
-
                                     <div class="form-group">
                                       <button class="btn-hover color-1" type="submit">Update</button>
                                     </div>
-                                                                     </form>
+                                       </form>
                                 </div>
 
                             </div>
@@ -93,12 +86,7 @@
 
     
     <style type="text/css">
-/*#url{
-    color: #000000;
-}*/
 .page-loader-wrapper{ display: none; }
 #urlp{border: 1px solid; color: #7e7e7e; padding: 6px;     visibility: hidden;}
 
 </style>
-
-  </body>

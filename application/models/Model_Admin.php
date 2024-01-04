@@ -570,6 +570,15 @@ public function get_application($id) {
       return 0;
   }
 
+//   public function get_visa_applications() {
+//     $query = $this->db->get('visa_application');
+    
+//     if ($query->num_rows() > 0) {
+//         return $query->result(); // Returning fetched data as an array of objects
+//     } else {
+//         return array(); // Return an empty array if no data is found
+//     }
+// }
 
   public function get_last_document_number($yearMonth) {
     $this->db->select('Docket_No');
@@ -762,6 +771,7 @@ public function delete_branch($table,$con)
 function insert_wallet($data){
   return $this->db->insert('ivs_wallet',$data);
   }
+
   public function update_wallet($id, $data) {
     $this->db->where('id', $id);
     $this->db->update('ivs_wallet', $data);
@@ -784,14 +794,15 @@ function insert_wallet($data){
 
   public function update_transection($id, $data) {
     $this->db->where('id', $id);
-    $this->db->update('transection', $data);
+    $this->db->update('ivs_ledger', $data);
   }
    
   public function get_transections() {
-    return $this->db->get('transection')->result();
+    return $this->db->get('ivs_ledger')->result();
   }
+
   public function get_transection($id) {
-    return $this->db->get_where('transection', array('id' => $id))->row();
+    return $this->db->get_where('ivs_ledger', array('id' => $id))->row();
   }
 
   public function delete_transection($table,$con)
@@ -801,6 +812,16 @@ function insert_wallet($data){
     else
     return 0;
   }
+
+  function insert_ledger($data){
+    return $this->db->insert('ivs_ledger',$data);
+    }
+
+    function get_all_ledger(){
+      $this->db->order_by('id','DESC');
+      $qu =	$this->db->get('ivs_wallet');
+    return $qu->result_array();
+    }
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////      Add User   ///////////////////////////////

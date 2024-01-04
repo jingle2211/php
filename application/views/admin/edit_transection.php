@@ -32,43 +32,30 @@
         <div role="tabpanel" class="tab-pane active" id="usersettings" aria-expanded="false">
         <div class="card">
             <div class="header">
-            <h2> <strong>Update</strong> Transection</h2>
+            <h2> <strong>Update</strong> ledger</h2>
             </div>
             <div class="body">
             <form method="post">
-            <label for="email_address">Visa Fee</label>
+            <label for="email_address">Ledger Name:</label>
             <div class="form-group">
             
-            <input type="text" name="visa_fee" value="<?= $transection->visa_fee; ?>" required>
+            <input type="text" name="name" value="<?= $transection->name; ?>" required>
             </div>                                         
-            <label for="processing">service Fee</label>
+            <label for="processing">Opening Balance:</label>
             <div class="form-group">
-            <input type="text" name="service_fee" value="<?= $transection->service_fee; ?>">
+            <input type="text" name="amount" value="<?= $transection->amount; ?>">
             </div>
-            <label for="Description">Embassy Fee</label>
+            <label for="Description">Ledger Type:</label>
             <div class="form-group">
-            <input type="text" name="embassy_fee" value="<?= $transection->embassy_fee; ?>">
+            <input type="text" name="ledger" value="<?= $transection->ledger; ?>">
             </div>
-            <label for="Note">Miscellaneous Charges:</label>
+            <label for="Note">Ledger Group:</label>
             <div class="form-group">
-            <input type="text" name="miscellaneous" value="<?= $transection->miscellaneous; ?>">
+            <input type="text" name="group" value="<?= $transection->group; ?>">
             </div>
-            <label for="email_address">Bill No/Recipt</label>
-            <div class="form-group">
-            <input type="text" class="form-control"  name="bill_no"  value="<?= $transection->bill_no; ?>">
-            </div>
-            <label for="email_address">Total Amount</label>
-            <div class="form-group">                                          
-            <input type="text" class="form-control" name="total_amount"  value="<?= $transection->total_amount; ?>">                                                        
-            </div>
-                                     
-        <?php if ($this->session->flashdata('message')) {
-          # code...
-         echo "<p style='color:red'>".$this->session->flashdata('message')."</p>";
-            } ?>
                                     
         <div class="form-group">
-        <input type="submit" name="submit" value="Update">
+        <input type="submit" class="btn-hover color-1" name="submit" value="Update">
         </div>
                                                                     
         </div>

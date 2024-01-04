@@ -12,20 +12,8 @@
         <li class="breadcrumb-item bcrumb-1">
         <a href="<?= base_url('Admin/dashboard'); ?>">
         <i class="fas fa-home"></i> Home</a> </li>            
-        <li class="breadcrumb-item active">Manage Transection</li>
+        <li class="breadcrumb-item active">Manage Ledger</li>
         </ul>
-        </div>
-        </div>
-        </div>
-
-        <div class="report">
-        <h2 class="pageHeadingStyle">Transection Report </h2>   
-        <div class="col-lg-3 col-md-3">
-        <div class="report_button">
-        <ul class="list-inline">
-        <li><button type="submit" class="btn-hover submit-area2" form="form1" value="Submit">View Data</button></li>
-        <li><a href='<?= base_url() ?>admin/export_csv'><img src="https://www.ivsvisa.com/tracker/Images/export_data2.png"></a></li>
-        </ul>    
         </div>
         </div>
         </div>
@@ -34,24 +22,17 @@
         <div class="alert bg-green alert-dismissible" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">×</span> </button>
-     <?= $this->session->flashdata('success'); ?>
+        <?= $this->session->flashdata('success'); ?>
          </div>
         <?php  } ?>
-        <?php if($this->session->flashdata('error')){ ?> 
-        <div class="alert bg-danger alert-dismissible" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">×</span> </button>
-     <?= $this->session->flashdata('error'); ?>
-        </div>
-    <?php  } ?> 
-
+        
             <div class="row clearfix"><br>  
             <div class="col-lg-12 col-md-12">      
             <div class="tab-content">               
             <div role="tabpanel" class="tab-pane active" id="usersettings" aria-expanded="false">
             <div class="card">
                 <div class="header">
-                <h2> <strong>Manage</strong> Transection </h2>
+                <h2> <strong>Manage</strong> Ledger </h2>
                 </div>
             <div class="body">
             <div class="table-responsive">
@@ -59,12 +40,12 @@
           <thead>
           <tr>
           <th>S.No.</th>
-          <th>Service Fee</th>
-          <th>Visa Fee</th>
-          <th>Miscellaneous Charges</th>
-          <th>Embassy Fee</th>
-          <th>Bill No</th>
-          <th>Total Amount</th>
+          <th>Ledger Code</th>
+          <th>Ledger Name</th>
+          <th>Opening Balance</th>
+          <th>Ledger Type</th>
+          <th>Ledger Group</th>
+         
           <th>Action</th>
           </tr>
           </thead>
@@ -72,12 +53,12 @@
           <?php if($transection): $i = 1;  foreach ($transection as $value): ?>
           <tr>                                            
           <td><?= $i++ ?></td>
-          <td><?= $value->visa_fee;  ?></td>
-          <td><?= $value->service_fee;  ?></td>
-          <td><?= $value->embassy_fee; ?></td>  
-          <td><?= $value->miscellaneous;  ?></td> 
-          <td><?= $value->bill_no;  ?></td>
-          <td><?= $value->total_amount;  ?></td>                                           
+          <td><?= $value->code;  ?></td>
+          <td><?= $value->name;  ?></td>
+          <td><?= $value->amount; ?></td>  
+          <td><?= $value->ledger;  ?></td> 
+          <td><?= $value->group;  ?></td>
+                                                 
           <td>
           <a href="<?= base_url('Admin/edit_transection/' . $value->id); ?>">Edit</a> |
           <a href="<?= base_url('Admin/delete_transection/' . $value->id); ?>" onclick="return confirm('Are you sure?')">Delete</a>    

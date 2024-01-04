@@ -58,7 +58,8 @@
                 </li>
                 </ul>
                 </fieldset>
-                <fieldset class="listar-generalstates">
+
+                <!-- <fieldset class="listar-generalstates">
                 <div class="listar-generalstate">
                 <h3 style="text-align:center" >General Stats</h3>
                 <div class="listar-description text-center">
@@ -66,7 +67,7 @@
                 </div>
                 </div>
                 <div id="piechart" style="width:900px; height:500px;"></div>
-                </fieldset>
+                </fieldset> -->
         </div>
         </div>
         </div>

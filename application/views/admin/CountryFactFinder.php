@@ -7,7 +7,7 @@
     <div class="container py-5 px-5">
     <h2 class="title">COUNTRY FACT FINDER</h2>
     <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-12 col-xs-12">
                     <div id="visa-side-menu">
                     <ul>
                     <li> <a href="CountryFactFinder">Country Fact Finder</a> </li>
@@ -50,136 +50,136 @@ echo $qu['name'];?> </option>
 </div>
                 </div>
                 </div>                           
-             <div class="col-lg-8" style="background-image: url(../images/map.jpeg); background-repeat:repeat; background-size: contain; ">
+             <div class="col-lg-8 col-md-12 col-xs-12" style="background-image: url(../images/map.jpeg); background-repeat:repeat; background-size: contain; ">
              <?php if($countryfact): $i = 1;  foreach ($countryfact as $value): ?>
              <div class="table-bg">
              <div class="row g-4 visa-main">
-                        <div class="col-lg-4 ">
+                        <div class="col-lg-4 col-xs-4 col-md-4">
                         <div class="visa-hedding">
                         <div class="visa-name">Name:</div>
                         </div>
                         </div>
-                        <div class="col-lg-10">
+                        <div class="col-lg-8 col-xs-8 col-md-8">
                         <div class="visa-text"><?= substr($value['name'], 0,999)  ?> </div>
                         </div>
                         </div>
-                        <div class="row g-4  visa-main">
-                        <div class="col-lg-4">
+                        <div class="row g-4 visa-main">
+                        <div class="col-lg-4 col-xs-4 col-md-4">
                         <div class="visa-hedding">
                         <div class="visa-name">Location:</div>
                         </div>
                         </div>
-                        <div class="col-lg-10">
+                        <div class="col-lg-8 col-xs-8 col-md-8">
                         <div class="visa-text"><?= substr($value['location'], 0,999)  ?> </div>
                         </div>
                         </div>
                         <!-- 2 -->
                         <div class="row g-4 visa-main">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-xs-4 col-md-4">
                         <div class="visa-hedding">
                         <div class="visa-name">Time:</div>
                         </div>
                         </div>
-                        <div class="col-lg-10">
+                        <div class="col-lg-8 col-xs-8 col-md-8">
                         <div class="visa-text"> <?= substr($value['time'], 0,900)  ?></div>
                         </div>
                         </div>
                         <!-- 3 -->
                         <div class="row g-4  visa-main">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-xs-4 col-md-4">
                         <div class="visa-hedding">
                         <div class="visa-name">Capital</div>
                         </div>
                         </div>
-                        <div class="col-lg-10">
+                        <div class="col-lg-8 col-xs-8 col-md-8">
                         <div class="visa-text"> <?= substr($value['capital'], 0,90)  ?>  </div>
                         </div>
                         </div>
                         <!-- 4 -->
                         <div class="row g-4  visa-main">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-xs-4 col-md-4">
                         <div class="visa-hedding">
                         <div class="visa-name">Language:</div>
                         </div>
                         </div>
-                        <div class="col-lg-10">
+                        <div class="col-lg-8 col-xs-8 col-md-8">
                         <div class="visa-text"> <?= substr($value['language'], 0,900)  ?></div>
                         </div>
                         </div>
                         <!-- 5 -->
                         <div class="row g-4  visa-main">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-xs-4 col-md-4">
                         <div class="visa-hedding">
                         <div class="visa-name">Area:</div>
                         </div>
                         </div>
-                        <div class="col-lg-10">
+                        <div class="col-lg-8 col-xs-8 col-md-8">
                         <div class="visa-text"> <?= substr($value['area'], 0,900)  ?></div>
                         </div>
                         </div>
                         <!-- 6 -->
                         <div class="row g-4  visa-main">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-xs-4 col-md-4">
                         <div class="visa-hedding">
                         <div class="visa-name">Population:</div>
                         </div>
                         </div>
-                        <div class="col-lg-10">
+                        <div class="col-lg-8 col-xs-8 col-md-8">
                         <div class="visa-text"> <?= substr($value['population'], 0,900)  ?></div>
                         </div>
                         </div>
                          <!-- 6 -->
                          <div class="row g-4  visa-main">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-xs-4 col-md-4">
                         <div class="visa-hedding">
                         <div class="visa-name">Currency:</div>
                         </div>
                         </div>
-                        <div class="col-lg-10">
+                        <div class="col-lg-8 col-xs-8 col-md-8">
                         <div class="visa-text"> <?= substr($value['currency'], 0,900)  ?></div>
                         </div>
                         </div>
                          <!-- 6 -->
                          <div class="row g-4  visa-main">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-xs-4 col-md-4">
                         <div class="visa-hedding">
                         <div class="visa-name">Climate:</div>
                         </div>
                         </div>
-                        <div class="col-lg-10">
+                        <div class="col-lg-8 col-xs-8 col-md-8">
                         <div class="visa-text"> <?= substr($value['climate'], 0,900)  ?></div>
                         </div>
                         </div>
                          <!-- 6 -->
                          <div class="row g-4  visa-main">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-xs-4 col-md-4">
                         <div class="visa-hedding">
                         <div class="visa-name">Holidays:</div>
                         </div>
                         </div>
-                        <div class="col-lg-10">
+                        <div class="col-lg-8 col-xs-8 col-md-8">
                         <div class="visa-text"> <?= substr($value['holiday'], 0,90200)  ?></div>
                         </div>
                         </div>
                            <!-- 6 -->
                            <div class="row g-4  visa-main">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-xs-4 col-md-4">
                         <div class="visa-hedding">
                         <div class="visa-name">Airline Name:</div>
                         </div>
                         </div>
-                        <div class="col-lg-10">
+                        <div class="col-lg-8 col-xs-8 col-md-8">
                         <div class="visa-text"> <?= substr($value['airline'], 0,900)  ?></div>
                         </div>
                         </div>
                           <!-- 6 -->
                           <div class="row g-4  visa-main">
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-xs-4 col-md-4">
                         <div class="visa-hedding">
                         <div class="visa-name">International Airports:</div>
                         </div>
                         </div>
-                        <div class="col-lg-10">
+                        <div class="col-lg-8 col-xs-8 col-md-8">
                         <div class="visa-text"> <?= substr($value['airport'], 0,900)  ?></div>
                         </div>
                         </div>
