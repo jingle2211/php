@@ -237,11 +237,11 @@
       <!-- partial:partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas bg-gray-dark" id="sidebar">
         <ul class="nav">
-         <li class="nav-item nav-profile">
+         <!-- <li class="nav-item nav-profile">
             <a href="<?php echo base_url() ?>" class="nav-link">
               <div class="nav-profile-image">
                 <img src="<?php echo base_url() ?>assets/images/faces/male_avatar.png" alt="profile">
-                <span class="login-status online"></span> <!--change to offline or busy as needed-->
+                <span class="login-status online"></span> 
               </div>
               <div class="nav-profile-text d-flex flex-column">
                 <span class="font-weight-bold mb-2"><?php echo $user['name']; ?></span>
@@ -249,7 +249,7 @@
               </div>
               <i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
             </a>
-          </li>
+          </li> -->
           <li class="nav-item">
             <a class="nav-link" href="<?php echo base_url() ?>Finance/Home">
               <span class="menu-title">Dashboard</span>
@@ -277,7 +277,7 @@
               <div class="border-bottom">
                 <div class="font-weight-bold mb-0 text-muted mx-2">Manage Expenses</div>
               </div>
-              <div class="py-2 px-5 text-center">
+              <div class="py-2 px-2 text-center">
                 <button onclick="document.getElementById('id01').style.display='block'" class="btn btn-block btn-lg btn-gradient-info rounded-0 h3"><i class="far fa fa-plus"></i> New Data</button>
               </div>
             </span>

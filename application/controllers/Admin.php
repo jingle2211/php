@@ -25,8 +25,9 @@ class Admin extends CI_Controller
          'title' => 'Dashboard',
          'user' => $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array(),
          'user_role' => $this->db->get('user_role')->num_rows(),
-         'user_member' => $this->db->get_where('user', ['role_id' => 2])->num_rows(),
-    
+         //'user_member' => $this->db->get_where('user', ['role_id' => 2])->num_rows(),
+         'user_member' => $this->db->get('user')->num_rows(),
+
          'menu' => $this->db->get('user_menu')->num_rows(),
          'sub_menu' => $this->db->get('user_sub_menu')->num_rows(),
          'report' => $this->db->get('user_report')->num_rows(),
@@ -1274,15 +1275,28 @@ public function edit_application($id) {
   if ($this->input->post('submit')) {
       $data = array(
           'branch' => $this->input->post('branch'),
-          'sender_Staff' => $this->input->post('name'),
+          'sender_Staff' => $this->input->post('sender_Staff'),
           'client' => $this->input->post('client'),
           'corporate_name' => $this->input->post('corporate_name'),
           'name' => $this->input->post('name'),
           'pasport_no' => $this->input->post('pasport_no'),
-          'date_of_travel' => $this->input->post('date_of_travel')
+          'email' => $this->input->post('email'),
+          'phone' => $this->input->post('phone'),
+          'date_of_birth' => $this->input->post('date_of_birth'),
+          'date_of_travel' => $this->input->post('date_of_travel'),
+          'Country' => $this->input->post('Country'),
+          'PNR' => $this->input->post('PNR'),
+          'Ref' => $this->input->post('Ref'),
+          'Staff' => $this->input->post('Staff'),
+          'Fee' => $this->input->post('Fee'),
+          'departure' => $this->input->post('departure'),
+          'enquiry' => $this->input->post('enquiry'),
+          'Facilitation' => $this->input->post('Facilitation'),
+          'Charges' => $this->input->post('Charges'),
+          'Dispatch' => $this->input->post('Dispatch')
       );
       $this->Model_Admin->update_application($id, $data);
-      redirect('Admin');
+      redirect('admin/application_report');
   }
   $data['allapplication'] = $this->Model_Admin->get_application($id);
   $this->load->view('admin/edit_application', $data);

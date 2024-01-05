@@ -74,20 +74,18 @@
     </div><!-- /.header-content-left -->
     </div><!-- /.col-md-9 -->
     
-            <div class="col-sm-2 col-md-2">
+            <div class="col-lg-2 col-sm-6 col-md-6 col-xs-6">
             <div class="d-md-flex align-items-center">
 	        <a href="<?= base_url('Adminlogin'); ?>" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light text-white header-m pl-4">TRACK YOUR APPLICATION</a>
             </div>
             </div>
-     <div class="col-md-2 col-sm-2">
+     <div class="col-lg-2 col-sm-6 col-md-6 col-xs-6">
      <div class="header-content-right">
      <ul  class="header-top-menu-s  mb-float-left">                            
      <?php 
    if ($this->session->userdata('loginnumber')) {
         ?>
-        <li> <a href="<?=  base_url('Dashboard'); ?>" >
-         <i class="fa fa-user"></i> <span>My Account</span> </a>
-            </li>
+        <li>  <i class="fa fa-user"></i> <span>My Account</span>   </li>
              <?php
                      }else {?> 
          <li>
@@ -144,7 +142,7 @@
                             <div class="mobile-menu-main hidden-md hidden-lg pdm-10">
                             <div class="menucontent overlaybg"> </div>
                             <div class="menuexpandermain slideRight">
-                            <a id="navtoggole-main" class="animated-arrow slideLeft menuclose"> </a>
+                            <a id="navtoggole-main" class="slideLeft menuclose"><i class= "fa fa-bars animated-arrow" aria-hidden="true"></i>  </a>
                             </div><!--/.menuexpandermain-->
                              <div id="mobile-main-nav" class="mb-navigation slideLeft">
                              <div class="menu-wrapper">

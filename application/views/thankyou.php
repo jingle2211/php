@@ -12,7 +12,7 @@
     <div class="wellcome-block">
     <div class="container">
         <div class="about-title-area">
-        <h3 class="about-service-title">ONLINE VISA TRACKING TOOL</h3>
+        <h3 class="about-service-title">Online Visa Tracking Tool</h3>
         <p class="discription">At IVS, recognize the impact of technology on economies, business and the various communities. We also understand that the Internet paradigm, is all about global co-operation.</p> 
         <p class="discription"> IVS has capped a vision on how technology can help an organization in its simple yet essential needs in visa formalities. It is economical, user friendly and a boon in saving costs in calls, couriers, postage and most essential time.
         It is flawless, seamless visa process for our valued customers </p>
@@ -26,7 +26,7 @@
 
                 <div class="col-md-7">
                 <div class="service-block wc">
-                    <h2 class="service-title">ADVANTAGES OF VISA TRACKING SYSTEMS</h2>
+                    <h2 class="service-title">Advantages Of Visa Tracking Systems</h2>
                     <li class="discription">Better control</li>
                     <li class="discription">Log History</li>
                     <li class="discription">MIS Reports generations</li>
@@ -40,7 +40,7 @@
                     <li class="discription">Time bound updates.</li>
                 </div><!-- /.service-block -->
                 <div class="service-block wc">
-                    <h2 class="service-title">ONLINE VISA INFORMATION TOOL</h2>
+                    <h2 class="service-title">Online Visa Information Tool</h2>
                     <p class="discription"> It is one of the most comprehensive Visa information tool, which provides you all details on Visa documentation, process, fee and applicable forms for almost all the countries. This gives an instant access to you to a large pool of information at a click of a button, be it a business, tourist or a Work Permit Visa stamping, you can get the information easily.</p>
 
                 </div>

@@ -15421,12 +15421,12 @@ span.badge {
   top: 0px !important; }
 
 .btn-hover {
-  width: 230px;
+   width: 225px;
   font-size: 13px;
   font-weight: 600;
   color: #fff;
   cursor: pointer;
-  margin: 20px;
+  margin: 10px;
   height: 38px;
   text-align: center;
   border: none;
@@ -17856,4 +17856,66 @@ input.news {
   border-radius: 0 !important;
   margin-top: 2px !important;
   padding: 2px !important;
+}
+
+
+@media screen and (max-width: 767px) {
+  .listar-statistics li {
+    width:100% !important;
+    float: left;
+    padding: 0 15px;
+    list-style-type: none;
+    padding-left: 0px;
+    margin-bottom: 15px;
+}
+.dashboard {
+  width: 100%;
+  float: left;
+  padding: 0;
+}
+.breadcrumb{
+  font-size:12px !important;
+}
+.report_button {
+    display: none !important;
+}
+.breadcrumb li.active {
+    color: #141111;
+    font-weight: 600;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+  display: inline-block;
+  padding-right: 0.5rem;
+  color: #01080e;
+  content: "/";
+  font-size: 15px;
+}
+
+.theme-black .breadcrumb li a {
+    color: #141111 !important;
+    font-weight: 600;
+
+}
+.breadcrumb li a .fa-home {
+  font-size: 17px;
+  position: relative;
+  top: 0;
+  float: left;
+  padding-right: 3px;
+  color: #0a0000;
+}
+.navbar-nav.navbar-right {
+  float:right !important;
+  margin-right:0px!important;;
+}
+}
+@media screen and (max-width: 420px) {
+  .listar-statistics li {
+    width:100% !important;
+    float: left;
+    padding: 0 15px;
+    list-style-type: none;
+    padding-left: 0px;
+}
+
 }

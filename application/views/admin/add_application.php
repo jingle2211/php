@@ -146,7 +146,7 @@ foreach ($client as $qu) {
           </div>
 </div>
                 
-            <h4 class="text-center">PASSENGER DETAILS</h4>
+            <h4 class="text-center">Passenger Details</h4>
 <div class="row">
 <div class="col-lg-2 col-md-2 col-xs-12">
 <label>Full Name:<span>*</span></label>
@@ -211,7 +211,7 @@ foreach ($client as $qu) {
 </div>
 </div>
               
-<h4 class="text-center">VISA DETAILS</h4>
+<h4 class="text-center">Visa Details</h4>
 
 <div class="row">
 <div class="col-lg-1 col-md-1">
@@ -252,7 +252,7 @@ foreach ($country as $qu) {
     <div class="col-lg-3 col-md-3 col-xs-12">
     <input type="text" class="form-control" id="Fee" name="Fee" placeholder="Fee">
 </div>
-<div class="col-lg-2 col-md-2 col-xs-12">                   
+<div class="col-lg-1 col-md-1 col-xs-12">                   
 <label class="form-check-label" for="deep">DEP Date:</label>               
 </div>
 <div class="col-lg-3 col-md-3 col-xs-12">
@@ -261,7 +261,7 @@ foreach ($country as $qu) {
 <div class="col-lg-1 col-md-1 col-xs-12">
 <label class="form-check-label" for="ENQ">ENQ Date:</label>                
 </div>
-<div class="col-lg-2 col-md-2 col-xs-12">
+<div class="col-lg-3 col-md-3 col-xs-12">
   <input type="date" class="form-control" id="enquiry" name="enquiry">
 </div>
 </div>
@@ -337,7 +337,7 @@ foreach ($Staff as $qu) {
 </div>
   </div>
 
-<h4 class="text-center">CHECK LIST</h4>
+<h4 class="text-center">Document Checklist</h4>
 <div class="row">
 <div class="col-md-6">
 <input type="checkbox" id="checklist" name="checklist" value="Visa Form Duly Filled">
@@ -371,7 +371,7 @@ foreach ($Staff as $qu) {
   <label for="checklist8"> Medical Health Insurance</label></div>
 </div>
 
-    <h4 class="text-center">DISPATCH DETAIL</h4>
+    <h4 class="text-center">Dispatch Details</h4>
 <div class="row">
  <div class="col-lg-2 col-md-2 col-xs-12">
   <label>Bill No:</label>
@@ -412,8 +412,8 @@ foreach ($Staff as $qu) {
 </div>
 
 <div class="submit-area text-center">
-<i class="fa fa-envelope" aria-hidden="true"></i>
-<button class="btn-hover color-1" type="submit">Send an e-mail after submission</button>
+
+<button class="btn-hover color-1" type="submit"><i class="fa fa-envelope" aria-hidden="true">&nbsp;&nbsp;</i> Send Mail & Submit</button>
 </div>
 
 </form>

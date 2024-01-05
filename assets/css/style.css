@@ -4,7 +4,6 @@ html {
 
 body {
   background-color: white;
-  /* font-family: "Exo",sans-serif !important; */
   font-family: Inter,sans-serif !important;
   font-size: 16px;
   font-weight: normal;
@@ -14,7 +13,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  /* font-family: "Exo",sans-serif  !important; */
   font-family: Inter,sans-serif !important;
   line-height: 1.4em;
   color: #1d1d1f;
@@ -206,8 +204,7 @@ margin-bottom: 0px;
 }
 
 .heading-content.style-one h4.subtitle {
-  /* font-family: "Exo",sans-serif !important; */
-  font-family: Inter,sans-serif !important;
+ font-family: Inter,sans-serif !important;
   font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
@@ -265,12 +262,17 @@ margin-bottom: 0px;
 
 @media only screen and (max-width: 767px) {
   .heading-content.style-two .title {
-    font-size: 45px;
+    font-size: 28px;
+  }
+  .heading-content-three .title{
+      font-size: 28px !important;
+  }
+  h2{
+      font-size: 18px !important;
   }
 }
 
 .heading-content.style-two .subtitle {
-  /* font-family: "Exo", sans-serif !important; */
   font-family: Inter,sans-serif !important;
   font-size: 20px;
   color: inherit;
@@ -299,13 +301,9 @@ margin-bottom: 0px;
   margin-top: 0;
   margin-bottom: 0;
   line-height: 1.2em;
-  font-family: Inter,sans-serif !important;
-  /* font-family:"Exo", sans-serif !important; */
 }
 
 .heading-content-three .sub-title {
-  font-family: Inter,sans-serif !important;
-  /* font-family: "Exo", sans-serif !important; */
   font-size: 18px;
   color: inherit;
   font-weight: 500;
@@ -324,20 +322,16 @@ margin-bottom: 0px;
 }
 
 .heading-content-four h5.sub-title {
-  /* font-family: "Exo", sans-serif !important; */
   font-family: Inter,sans-serif !important;
   font-size: 16px;
   color: inherit;
 }
 
 .extra-big-title {
-	/* font-family: "Exo", sans-serif  !important; */
-  font-family: Inter,sans-serif !important;
   font-size:45px;
   margin:0;
   font-weight:600;
   line-height: 1.2em;
-  
 }
 
 ::-moz-selection {
@@ -345,11 +339,6 @@ margin-bottom: 0px;
   display: inline-block;
   text-shadow: none;
 }
-
-/* ::selection {
-  display: inline-block;
-  text-shadow: none;
-} */
 
 p {
   /*margin-bottom: 1.875em;*/
@@ -737,11 +726,7 @@ body:not(.woocommerce) .blog-single-block #comments table td {
   }
 }
 
-@media only screen and (max-width: 767px) {
-  .ex-pdtm-72 {
-    padding-top: 72px !important;
-  }
-}
+
 
 @media only screen and (max-width: 767px) {
   .ex-pdbm-72 {
@@ -798,7 +783,7 @@ body:not(.woocommerce) .blog-single-block #comments table td {
    /*background-color: #232C3B; */
    background-image: url(top-banner-country.jpg); 
     width: 100%;
-    float: left;
+    /*float: left;*/
     height: 200px;
 }
 
@@ -1650,8 +1635,6 @@ a:hover, a:active {
     text-transform: capitalize;
     text-decoration: none;
     position: relative;
-    font-family: Inter,sans-serif !important;
-    /* font-family: "Exo", sans-serif !important; */
     color: #1d1d1f;
     vertical-align: middle;
     -webkit-box-shadow: 0 0 0 transparent;
@@ -2030,7 +2013,7 @@ pagination
   }
   .menu-extend.fa-plus::before {
     content: "\f068";
-    font-family:"Exo", sans-serif !important;
+    font-family: Inter,sans-serif !important;
   }
   /*2nd UL Style*/
   .menu-list .sub-menu a {
@@ -2209,8 +2192,10 @@ pagination
   }
   .animated-arrow {
     cursor: pointer;
-    padding: 35px 15px;
+    padding: 20px 0px;
     display: block;
+    float:right;
+    font-size:24px !important;
   }
   .animated-arrow.menuopen {
     position: fixed;
@@ -2400,7 +2385,6 @@ pagination
 }
 
 .header-two .header-bottom-block .nav-right-content > ul > li > a {
-  /* font-family: "Exo", sans-serif !important; */
   font-family: Inter,sans-serif !important;
 }
 
@@ -2430,7 +2414,6 @@ pagination
   font-size: 15px;
   letter-spacing: 0.015em;
   font-family: Inter,sans-serif !important;
-  
 }
 
 .header-two .header-content-right ul li .icon-block {
@@ -2568,7 +2551,7 @@ pagination
 
 .tel-contact-number a {
   color: #14129c;
-  font-family: Inter,sans-serif !important;
+ font-family: Inter,sans-serif !important;
   font-size: 18px;
   font-weight: 700;
   margin-right: 15px;
@@ -3434,7 +3417,6 @@ margin-left: 0px;
   margin-bottom: 0;
   margin-top: 0;
   font-weight: 900;
-  font-family: Inter,sans-serif !important;
   line-height: 50px;
 }
 
@@ -3544,10 +3526,8 @@ margin-left: 0px;
 }
 
 .check-vehicle-footer button, .check-vehicle-footer input[type="button"], .check-vehicle-footer input[type="reset"], .check-vehicle-footer input[type="submit"] {
-  /*margin-right: 15px;*/
   float: right;
   color: #1d1d1f;
-  font-family: Inter,sans-serif !important;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 0.035em;
@@ -3806,7 +3786,6 @@ p.requ {
   column-gap: 30px;
   -webkit-column-gap: 30px;
   color: #4b4b4b;
-  font-family: Inter,sans-serif !important;
   font-weight: 500;
   font-size: 15px;
 }
@@ -3865,7 +3844,6 @@ p.requ {
   border-radius: 0;
   display: inline-block;
   font-size: 16px;
-  font-family: Inter,sans-serif !important;
   letter-spacing: 0.025em;
   padding: 10px 30px;
 }
@@ -4116,9 +4094,6 @@ p.requ {
   margin-bottom: 30px;
 }
 
-.faq-bolck .heading-content .subtitle {
-  font-family: Inter,sans-serif !important;
-}
 
 .menu-extend .fa-plus:before {
   content: "\f068";
@@ -4135,7 +4110,6 @@ p.requ {
 }
 
 .faq-accordion .faq-subtitle {
-	font-family: Inter,sans-serif !important;
   font-weight: 700;
   font-size: 30px;
   margin-top: 0;
@@ -4149,7 +4123,7 @@ p.requ {
           box-shadow: 0 0 0 transparent;
 }
 .faq-accordion p{
-  font-family: Inter,sans-serif !important;
+    font-family: Inter,sans-serif !important;
 }
 
 .faq-accordion .panel .panel-body {
@@ -4202,7 +4176,6 @@ p.requ {
 
 .accordion .panel .accordion-details {
   color: #4b4b4b;
-  font-family: Inter,sans-serif !important;
   font-size:15px;
 }
 
@@ -4227,7 +4200,6 @@ p.requ {
   border-radius: 5px;
   min-height: 90px;
   font-size: 13px;
-  font-family: Inter,sans-serif !important;
   font-weight: 600;
 }
 
@@ -4273,7 +4245,6 @@ p.requ {
   font-size: 14px;
   font-weight: 700;
   color: #5a5a5a;
-  font-family: Inter,sans-serif !important;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -4404,7 +4375,7 @@ p.requ {
 }
 
 .view-all-item .view-all-btn {
-  font-family: Inter,sans-serif !important;
+ font-family: Inter,sans-serif !important;
   background-color: #000;
   padding: 8px 15px;
   font-size: 14px;
@@ -4457,7 +4428,6 @@ p.requ {
   font-size: 13px;
   font-weight: 800;
   letter-spacing: 0.015em;
-  font-family: Inter,sans-serif !important;
 }
 
 .vehicle-bottom-content .meta-item span {
@@ -4520,7 +4490,7 @@ p.requ {
 .vehicle-top-meta .meta-item {
   float: left;
   margin-right: 15px;
-  font-family: Inter,sans-serif !important;
+  font-family: "Exo", sans-serif !important;
 }
 
 .vehicle-top-meta .meta-item span {
@@ -4669,7 +4639,7 @@ p.requ {
   .slider-style-two .owl-nav.disabled {
     display: block;
     position: absolute;
-    bottom: -39px;
+    bottom: -13px !important;
   }
 }
 
@@ -4827,7 +4797,6 @@ p.requ {
 }
 
 .highlight {
-	font-family: Inter,sans-serif !important;
   font-weight: 900;
   margin-bottom: 40px;
   font-size: 60px;
@@ -4844,7 +4813,6 @@ p.requ {
   font-weight: 700;
   font-size: 24px;
   color: #ffffff;
-  font-family: Inter,sans-serif !important;
   margin-bottom: 20px;
   line-height: 1.15;
 }
@@ -4907,7 +4875,8 @@ p.requ {
 
 @media only screen and (max-width: 768px) {
   .testimonial-slider .item {
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
+    padding:24px 30px;
   }
 }
 
@@ -4933,7 +4902,6 @@ p.requ {
 }
 
 .testimonial-slider .item .client-subtitle {
-  font-family: Inter,sans-serif !important;
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 15px;
@@ -4944,7 +4912,6 @@ p.requ {
 .testimonial-slider .item .discription {
   font-size: 15px;
   margin-bottom: 15px;
-  font-family: Inter,sans-serif !important;
 }
 
 .testimonial-slider .item .star i {
@@ -4979,7 +4946,6 @@ p.requ {
 .call-to-action .contact-left-content h3 {
   font-size: 30px;
   font-weight: bold;
-  font-family: Inter,sans-serif !important;
   color: #fff;
 }
 
@@ -4987,7 +4953,6 @@ p.requ {
   font-size: 20px;
   color: #FCA22A;
   font-weight: bold;
-  font-family: Inter,sans-serif !important;
 }
 
 @media screen and (max-width: 767px) {
@@ -5032,7 +4997,6 @@ p.requ {
 .call-to-action.style-two .left-content h3 {
   font-size: 30px;
   font-weight: bold;
-  font-family: Inter,sans-serif !important;
   color: #fff;
 }
 
@@ -5040,7 +5004,6 @@ p.requ {
   font-size: 20px;
   color: #303c6c;
   font-weight: bold;
-  font-family: Inter,sans-serif !important;
 }
 
 .call-to-action.style-two .right-content h4 {
@@ -5571,7 +5534,6 @@ p.requ {
   position: relative;
   top: -30px;
   font-size: 18px;
-  font-family: Inter,sans-serif !important;
   font-weight: bold;
 }
 
@@ -5668,7 +5630,7 @@ background-color: #232C3B;
     font-weight:600;
 }
 .VISA-FACILITATION-SERVICES li{
-  font-family: Inter,sans-serif !important;
+   font-family: Inter,sans-serif !important;
     line-height:28px;
 }
 /*--------------------------------------------------------------
@@ -5732,7 +5694,6 @@ background-color: #232C3B;
 .about-service .discription {
   padding: 0px 30px;
   line-height: 26px;
-  font-family: Inter,sans-serif !important;
   text-align:justify;
 }
 
@@ -5758,7 +5719,6 @@ background-color: #232C3B;
     font-size:20px;
     text-align: center;
     display: flex;
-    text-transform:uppercase;
     margin-left:13px;
     align-items: center;
   }
@@ -5801,7 +5761,6 @@ background-color: #232C3B;
   color: #fff;
   line-height: 1.75em;
   font-size: 15px;
-  font-family: Inter,sans-serif !important;
   font-weight: 500;
 }
 
@@ -5996,7 +5955,6 @@ background-color: #232C3B;
   letter-spacing: 0.010em;
   margin-top: 5px;
   position: relative;
-  font-family: Inter,sans-serif !important;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   -webkit-backface-visibility: hidden;
@@ -6019,7 +5977,6 @@ background-color: #232C3B;
 
 .pricing-table-item .price .price-subtille {
   margin-bottom: 10px;
-  font-family: Inter,sans-serif !important;
   font-weight: 600;
   letter-spacing: 0.015em;
 }
@@ -6053,7 +6010,7 @@ background-color: #232C3B;
 }
 
 .pricing-table-item .pricing-table-footer .button {
-  font-family: Inter,sans-serif !important;
+ font-family: Inter,sans-serif !important;
   font-size: 18px;
   display: inline-block;
 }
@@ -6274,7 +6231,13 @@ p.discription {
   font-size: 16px;
   color: #000;
   line-height: 32px;
-  font-family: Inter,sans-serif !important;
+ font-family: Inter,sans-serif !important;
+}
+p.caus {
+  font-size: 16px;
+  color: #fff;
+  line-height: 32px;
+ font-family: Inter,sans-serif !important;
 }
 li.discription {
   font-size: 16px;
@@ -6287,7 +6250,7 @@ li.discription {
 --------------------------------------------------------------*/
 .mobile-app-details .top-subtitle {
   font-size: 24px;
-  font-family:"Exo", sans-serif  !important;
+  font-family: Inter,sans-serif !important;
   font-weight: bold;
   margin-bottom: 0;
   color: #464646;
@@ -6491,7 +6454,6 @@ li.discription {
   color: #fff;
   margin-right: 5px;
   font-weight: bold;
-  font-family: Inter,sans-serif !important;
 }
 
 .social-profile a {
@@ -6682,7 +6644,6 @@ li.discription {
   color: #181818;
   font-size: 18px;
   margin-bottom: 5px;
-  font-family: Inter,sans-serif !important;
 }
 
 @media only screen and (max-width: 992px) {
@@ -6694,7 +6655,7 @@ li.discription {
 @media only screen and (max-width: 992px) {
   .single-main-content .entry-meta .entry-date:before {
     content: "\f017";
-    font-family:"Exo", sans-serif  !important;
+    font-family: Inter,sans-serif !important;
     font-size: 16px;
   }
 }
@@ -6710,7 +6671,7 @@ li.discription {
 @media only screen and (max-width: 992px) {
   .single-main-content .entry-meta .entry-tag:before {
     content: "\f292";
-    font-family: Inter,sans-serif !important;
+   font-family: Inter,sans-serif !important;
     font-size: 16px;
   }
 }
@@ -6744,7 +6705,6 @@ li.discription {
   font-weight: 800;
   font-size: 26px;
   color: #363636;
-  font-family: Inter,sans-serif !important;
 }
 
 .ralated-area .post-thumb img {
@@ -6833,7 +6793,6 @@ li.discription {
   color: #ffffff;
   letter-spacing: 1px;
   text-transform: capitalize;
-  font-family: Inter,sans-serif !important;
   font-weight: bold;
   margin-top: 0;
 }
@@ -7155,7 +7114,7 @@ li.discription {
 
 .page-header {
   margin: 0;
-  padding: 40px 0;
+  padding: 30px 0;
   text-align: center;
   /*margin-bottom: 10px;*/
 }
@@ -7624,7 +7583,6 @@ li.discription {
 .comments-area .comments-title span:before {
   margin-right: 10px;
   content: "\e603";
-  font-family: Inter,sans-serif !important;
   font-size: 15px;
 }
 
@@ -7632,7 +7590,6 @@ li.discription {
   margin-left: 10px;
   font-size: 15px;
   content: "\e600";
-  font-family: Inter,sans-serif !important;
 }
 
 .comments-area .comment-list {
@@ -7697,7 +7654,6 @@ li.discription {
 .comments-area .comment-metadata .author {
   font-size: 18px;
   font-weight: 800;
-  font-family: Inter,sans-serif !important;
 }
 
 .comments-area .comment-metadata .says, .comments-area .comment-metadata .comment-edit-link {
@@ -7888,17 +7844,17 @@ input[type="checkbox"]::-ms-check {
 }
 
 .widget .expand-margin.widget-title:after {
-  content: "\f067";
-  font-family: Inter,sans-serif !important;
-  position: absolute;
-  right: 15px;
-  width: 30px;
-  height: 30px;
-  border: 2px solid;
-  text-align: center;
-  font-size: 15px;
-  border-radius: 50px;
-  line-height: 28px;
+     content: "\f0dd";
+    position: absolute;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    /* border: 0px solid; */
+    text-align: center;
+    font-size: 18px;
+    /* border-radius: 50px; */
+    line-height: 15px;
+    font-family: 'FontAwesome';
 }
 
 .widget .expand-margin.expand.widget-title:after {
@@ -7923,7 +7879,6 @@ input[type="checkbox"]::-ms-check {
   font-weight: 800;
   border-bottom: 0 none;
   padding-bottom: 0;
-  color: #ffcc00;
 }
 
 @media only screen and (max-width: 992px) {
@@ -8096,15 +8051,13 @@ input[type="checkbox"]::-ms-check {
   font-size: 18px;
   margin-top: 0;
   margin-bottom: 5px;
-  color: #ffffff;
   font-weight: bold;
-  font-family: Inter,sans-serif !important;
 }
 
 .widget_popular_posts .post-info .post-date {
   font-size: 12px;
   font-weight: 500;
-  color: #b7b7b7;
+  color: #000;
 }
 
 .widget_categories ul {
@@ -8189,9 +8142,7 @@ input[type="checkbox"]::-ms-check {
 .widget.widget_menu ul li {
      line-height: 40px;
     position: relative;
-    font-family: Inter,sans-serif !important;
     font-size: 14px;
-    /* font-weight: 400; */
     letter-spacing: 0.025em;
 }
 
@@ -8572,13 +8523,9 @@ input[type="checkbox"]::-ms-check {
   border-bottom: 1px solid #888;
   border-radius: 0;
   float: left;
- /* margin-bottom: 30px;
-  padding: 10px 0;
-  margin-right: 50px;*/
   margin:10px 0px;
   color: #000;
   font-size: 15px;
-  background-color: #FAFAFA;
 }
 
 .input-content input:nth-of-type(3) {
@@ -8604,7 +8551,6 @@ input[type="checkbox"]::-ms-check {
   width: 100%;
   margin-bottom: 40px;
   font-size: 15px;
-  background-color: #FAFAFA;
 }
 
 .input-content .subimt-button {
@@ -9051,7 +8997,6 @@ object {
   -webkit-text-fill-color: transparent;
   line-height: 1.2em;
   margin-top: 0;
-  font-family:"Exo", sans-serif  !important;
   font-weight: bold;
 }
 
@@ -9532,13 +9477,17 @@ label span {
 .input-placeholder { 
   color: red;}
   
+  aside#sidebar {
+    background: whitesmoke;
+}
 #request-form {
   margin: 28px 0px;
   width: 100%;
   float: left;
   box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
   padding:26px;
-
+  background: #fff;
+  border-radius: 15px;
 }
 .applyvisasubmit {
   width: 100%;
@@ -9573,6 +9522,10 @@ input[type="submit"]  {
 box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 font-size: 14px;
        border-radius:12px;
+}
+.apply_evisa input::placeholder{
+    color:#8a8a96;
+    opacity:1;
 }
 #request-form.apply_evisa .form-control {
   width: 50%;
@@ -9698,7 +9651,6 @@ div#visa-side-menu {
   border-top: 1px dotted #fff;
   border-bottom: 1px dotted #d9d9d9;
   padding: 11px;
-  font-family: Inter,sans-serif !important;
   color: #868684;
   text-decoration: none;
   text-shadow: 0px .2px 0 black;
@@ -9716,7 +9668,6 @@ div#visa-side-menu {
   border-top: 1px dotted #fff;
   border-bottom: 1px dotted #d9d9d9;
   padding: 11px;
-  font-family: Inter,sans-serif !important;
   color: #868684;
   text-decoration: none;
   text-shadow: 0px .2px 0 black;
@@ -9800,13 +9751,12 @@ div#visa-side-menu {
 /* THE SUBMENUS */
 #visa-side-menu>ul ul {
   position: absolute;
-  left: 50%;
- margin-top: 35px;
+  left: 100%;
+  top: -9999px;
   padding-left: 5px;
   opacity: 0;
-  min-width: 170px;
+  min-width: 175px;
   margin-left: 0px;
-  
   background-color: White !important;
 }
 
@@ -9990,4 +9940,136 @@ opacity: inherit;
 font-size: 18px ;
 line-height: 28px;
 color: #000;
+}
+
+/*//////  media query responsive      /////*/
+
+@media screen and (max-width: 600px) {
+  .request_apply {
+    width: 100% !important;
+    float: left;
+}
+.apply_evisa label{
+  width: 100% !important ;
+}
+.apply_evisa input[type="text"]{
+ width: 100% !important; 
+}
+#request-form.apply_evisa .form-control{
+  width: 100% !important;
+}
+.page-header .page-title{
+  font-size: 18px !important;
+}
+.w3-content.wid.w3-display-container{
+ 
+  height: auto !important;
+}
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+   
+}
+.carousel-caption{
+  margin-bottom:0;
+}
+.carousel-caption h2{
+  font-size:17px !important;
+}
+.carousel-caption p{
+  font-size:10px;
+}
+a.btn.btn-primary.p-4.w-100{
+  width:120px !important;
+  font-size: 15px;
+  padding: 15px;
+  display:none;
+}
+
+#visa-side-menu>ul ul {
+  position: absolute;
+  left: 50% !important;
+  margin-top:38px !important;
+  padding-left: 5px;
+  opacity: 0;
+  min-width: 175px;
+  margin-left: 0px;
+  background-color: White !important;
+}
+
+  }
+
+@media  only screen and (max-width: 667px) {
+  .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+
+.extra-big-title {
+  font-size:24px !important;
+  margin:0;
+  font-weight:600;
+  line-height: 1.2em;
+}
+
+
+.carousel-caption{
+  margin-bottom:0;
+}
+.carousel-caption h2{
+  font-size:17px;
+}
+.carousel-caption p{
+  font-size:10px;
+}
+/*a.btn.btn-primary.p-4.w-100{*/
+/*  width:120px !important;*/
+/*  font-size: 15px;*/
+/*  padding: 15px;*/
+  
+/*}*/
+a.btn.btn-outline-light.text-white.header-m.pl-4 {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-size: 9px;
+    padding: 9px !important;
+    color: #fff;
+}
+.header-top-area .header-top-menu-s li a{
+  padding: 13px !important;
+}
+
+.travel_visa_content{
+  display:inline;
+}
+
+.pull-right {
+    padding: 0px;
+    position: relative;
+    right: 2%;
+    bottom: 50px !important;
+}
+
 }

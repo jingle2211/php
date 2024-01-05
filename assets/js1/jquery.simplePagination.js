@@ -10,7 +10,7 @@
 	$.fn.simplePagination = function(options) {
 		
 		var defaults = {
-			perPage: 5,
+			perPage: 6,
 			containerClass: '',
 			previousButtonClass: '',
 			nextButtonClass: '',
@@ -39,8 +39,8 @@
 
 			bPrevious.style.marginRight = '8px';
 			bNext.style.marginLeft = '8px';
-			container.style.textAlign = "center";
-			container.style.marginBottom = '20px';
+			container.style.textAlign = "right";
+			container.style.marginBottom = '5px';
 
 			container.appendChild(bPrevious);
 			container.appendChild(of);

@@ -69,15 +69,28 @@ public function manage_application()
 
 public function edit_application($id) {
   if ($this->input->post('submit')) {
-      $data = array(
-          'branch' => $this->input->post('branch'),
-          'sender_Staff' => $this->input->post('name'),
-          'client' => $this->input->post('client'),
-          'corporate_name' => $this->input->post('corporate_name'),
-          'name' => $this->input->post('name'),
-          'pasport_no' => $this->input->post('pasport_no'),
-          'date_of_travel' => $this->input->post('date_of_travel')
-      );
+    $data = array(
+      'branch' => $this->input->post('branch'),
+      'sender_Staff' => $this->input->post('sender_Staff'),
+      'client' => $this->input->post('client'),
+      'corporate_name' => $this->input->post('corporate_name'),
+      'name' => $this->input->post('name'),
+      'pasport_no' => $this->input->post('pasport_no'),
+      'email' => $this->input->post('email'),
+      'phone' => $this->input->post('phone'),
+      'date_of_birth' => $this->input->post('date_of_birth'),
+      'date_of_travel' => $this->input->post('date_of_travel'),
+      'Country' => $this->input->post('Country'),
+      'PNR' => $this->input->post('PNR'),
+      'Ref' => $this->input->post('Ref'),
+      'Staff' => $this->input->post('Staff'),
+      'Fee' => $this->input->post('Fee'),
+      'departure' => $this->input->post('departure'),
+      'enquiry' => $this->input->post('enquiry'),
+      'Facilitation' => $this->input->post('Facilitation'),
+      'Charges' => $this->input->post('Charges'),
+      'Dispatch' => $this->input->post('Dispatch')
+  );
       $this->Model_Admin->update_application($id, $data);
       redirect('Information/application_report');
   }
