@@ -99,10 +99,6 @@
         <div class="form-group">
         <input type="text" class="form-control" placeholder="Keyword Discription" name="title2" required>
         </div>
-         <?php if ($this->session->flashdata('message')) {
-           # code...
-         echo "<p style='color:red'>" . $this->session->flashdata('message') . "</p>";
-         } ?>
 
         <div class="form-group">
         <button class="btn-hover color-1" type="submit">Submit</button>
