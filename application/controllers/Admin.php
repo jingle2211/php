@@ -391,8 +391,6 @@ public function edit_visa($id) {
          // 'country' => $this->input->post('country'),
           'country_id' => $this->input->post('country_id'),
           'name' => $this->input->post('name')
-          //'climate' => $this->input->post('climate'),
-         // 'airport' => $this->input->post('airport')
       );
       $this->Model_Admin->update_visa($id, $data);
       redirect('admin/manage_visa');
