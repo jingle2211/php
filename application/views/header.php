@@ -80,24 +80,27 @@
 	        <a href="<?= base_url('Adminlogin'); ?>" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light text-white header-m pl-4">TRACK YOUR APPLICATION</a>
             </div>
             </div>
-     <div class="col-lg-2 col-sm-6 col-md-6 col-xs-6">
- <div class="header-content-right">
-    <ul class="header-top-menu-s mb-float-left">
-        <?php if ($this->session->userdata('loginnumber')) { ?>
-            <li><i class="fa fa-user"></i> <span>My Account</span></li>
-        <?php } else { ?>
-            <li class="has-submenu">
-                <a href="#" class="language">
-                    <i class="fa fa-user"></i> <span>My Account</span>
-                </a>
-                <ul class="sub-menu">
-                    <li><a href="<?= base_url('auth'); ?>">Login</a></li>
-                </ul><!-- /.sub-menu -->
+     <div class="col-md-2 col-sm-2">
+     <div class="header-content-right">
+     <ul  class="header-top-menu-s  mb-float-left">                            
+     <?php 
+   if ($this->session->userdata('loginnumber')) {
+        ?>
+        <li> <a href="<?=  base_url('Dashboard'); ?>" >
+         <i class="fa fa-user"></i> <span>My Account</span> </a>
             </li>
-        <?php } ?>
-    </ul><!-- /.header-top-menu -->
-</div>
-<!-- /.left-content -->
+             <?php
+                     }else {?> 
+         <li>
+        <a href="index.php" class="language">
+        <i class="fa fa-user"></i> <span>My Account</span> </a>
+        <ul class="sub-menu">
+        <li><a href="<?= base_url('auth'); ?>">Login </a></li>                                   
+        </ul><!-- /.sub-menu -->
+        </li> 
+         <?php } ?>                          
+        </ul><!-- /.header-top-menu -->              
+        </div><!-- /.left-content -->
         </div><!-- /.col-md-3 -->
         </div><!-- /.row -->
         </div><!-- /.container-lg-screen -->
