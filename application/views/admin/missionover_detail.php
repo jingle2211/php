@@ -59,12 +59,12 @@
             <?php if($missionover): $i = 1;  foreach ($missionover as $value): ?>
             <tr>                                            
             <td><?= $i++ ?></td>
-            <td><?= substr($value['Name'], 0,90)  ?></td>
-            <td><?= substr($value['Address'], 0,90)  ?></td> 
+            <td><?= substr($value['Name'], 0,900)  ?></td>
+            <td><?= substr($value['Address'], 0,9900)  ?></td> 
             <td><?= substr($value['pin_code'], 0,900)  ?></td>
             <td><?= $value['Telephone'] ?></td>  
-            <td><?= substr($value['Email'], 0,90)  ?>
-            <?= substr($value['website'], 0,90)  ?>
+            <td><?= substr($value['Email'], 0,900)  ?>
+            <?= substr($value['website'], 0,900)  ?>
         </td> 
                                                 
             <td>

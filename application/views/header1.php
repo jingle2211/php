@@ -146,7 +146,7 @@
                     <div class="row">                
                         <div class="col-md-3 col-sm-3 col-xs-10">
                             <div class="site-logo">
-                                <a href="<?= base_url(); ?>"><img src="<?= base_url(); ?>images/cargodeal.png" alt="header-logo" /></a>
+                                <a href="<?= base_url(); ?>"><img src="<?= base_url(); ?>images/ivslogo.png" alt="header-logo" /></a>
                             </div><!-- /.logo -->
                         </div><!-- /.col-md-2 -->
                         <div class="col-md-9 col-sm-9 col-xs-2">

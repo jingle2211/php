@@ -19482,7 +19482,7 @@ truck:
   label: truck
   search:
     terms:
-      - cargo
+      - visa
       - delivery
       - shipping
       - vehicle
@@ -19497,7 +19497,7 @@ truck-loading:
   search:
     terms:
       - box
-      - cargo
+      - visa
       - delivery
       - inventory
       - moving
@@ -19526,7 +19526,7 @@ truck-moving:
   label: Truck Moving
   search:
     terms:
-      - cargo
+      - visa services
       - inventory
       - rental
       - vehicle
@@ -19540,8 +19540,8 @@ truck-pickup:
   label: Truck Side
   search:
     terms:
-      - cargo
-      - vehicle
+      - services
+      - visa
   styles:
     - solid
   unicode: f63c

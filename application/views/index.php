@@ -207,7 +207,7 @@ style="background-attachment: fixed;background-image:url(<?= base_url(); ?>asset
 <div class="col-md-6">
 <div class="service-block wc">
 <!-- <i class="fa fa-university" aria-hidden="true"></i> -->
-<h2 class="service-title"><i class="fa fa-university" aria-hidden="true"></i> WORK PERMIT</h2>
+<h2 class="service-title"><i class="fa fa-university" aria-hidden="true"></i> Work Permit</h2>
 <p class="discription">Amorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
                                     vitae nibh nisl. Cras etitikis mauris egeth .</p>
  </div><!-- /.service-block -->

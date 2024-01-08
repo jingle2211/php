@@ -35,7 +35,7 @@
 <!-- Form to create a new group -->
 <h2>Create Group</h2>
 <form method="post" action="<?php echo base_url('admin/create_group'); ?>">
-    <input type="text" name="group_name" placeholder="Enter group name" class="news col-md-6" Required/>
+    <input type="text" name="group_name" placeholder="Enter group name" class="news col-md-4" Required/>
     <button type="submit">Create Group</button>
 </form>
 </div>

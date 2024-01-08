@@ -47,9 +47,32 @@
                                 </div>
                                 <div class="body">
                                     <?= form_open_multipart('Admin/update_page'); ?>
+
+                                    <div class="row">    
+                                    <div class="form-group col-lg-6" style="display: flex; ">
+                                     <div class="col-md-4">
+                                    <label for="Name">Country Name:</label>
+                                    </div>
+                                     <div class="col-md-8">
+                                    
+                                    <input type="text" id="country" class="form-control title"  value="<?= $details['country']; ?>" name="country" style="border:1px solid; padding-left:10px;">
+                                    </div>
+                                    </div>
+                                    <!-- Url Input -->
+                                    <div class="form-group col-lg-6"style="display: flex; ">
+                                     <div class="col-md-4">
+                                     <label for="processing">Visa Type:</label>
+                                     </div>
+                                     <div class="col-md-8">
+                                   
+                                    <input type="text" id="visa_type" class="form-control title"  value="<?= $details['visa_type']; ?>" name="visa_type" style="border:1px solid; padding-left:10px;">
+                                    </div>
+                                    </div>
+                                    </div>
+
                                     <label for="email_address">Enter Title</label>
                                     <div class="form-group">
-                                        <input type="text" id="title" class="form-control title" placeholder="Title" value="<?= $details['title']; ?>" name="title" required>
+                                        <input type="text" id="title" class="form-control title" placeholder="Title" value="<?= $details['title']; ?>" name="title" style="border:1px solid; padding-left:10px;">
                                     </div>
                                     <br>
                                     <!-- Url Input -->

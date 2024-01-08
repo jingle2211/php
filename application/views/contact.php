@@ -70,7 +70,7 @@
                 <input type="text" placeholder="Name" name="name" class="form-controller" required>
                 </div><!-- /.col-sm-6 -->
                 <div class="col-sm-6">
-                 <input type="phone" placeholder="phone" name="phone" class="form-controller">
+                 <input type="phone" placeholder="Phone" name="phone" class="form-controller">
                  </div><!-- /.col-sm-6 --> 
                  <div class="col-sm-12">
                  <input type="email" placeholder="Email" name="email" class="form-controller Email" required>

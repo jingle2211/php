@@ -27,7 +27,7 @@ public function add_application()
 //$data = $loggedInUser['user_role']; // Assuming username is stored in 'username' field
 
   $this->load->view('admin/header', $data);
-  $this->load->view('Information/add_application', $data);
+  $this->load->view('information/add_application', $data);
   $this->load->view('admin/footer');
  
   if ($this->input->post()):
@@ -47,10 +47,10 @@ public function add_application()
   
     if ($this->Model_Admin->insert_application($data)):
       $this->session->set_flashdata('success', '<b> New Application Added successfully!</b>');
-      redirect('Information/application_report');
+      redirect('information/application_report');
     else:
       $this->session->set_flashdata('error', '<b>error !! Please Try Again</b>');
-      redirect('Information/add_application');
+      redirect('information/add_application');
     endif;
 
   endif;
@@ -64,26 +64,39 @@ public function manage_application()
   $all['visa_application'] = $this->Model_Admin->get_all_application();
   $arrayName = array('id >' => 0);
   $this->load->view('admin/header', $all);
-  $this->load->view('Information/application_report', $all);
+  $this->load->view('information/application_report', $all);
 }
 
 public function edit_application($id) {
   if ($this->input->post('submit')) {
-      $data = array(
-          'branch' => $this->input->post('branch'),
-          'sender_Staff' => $this->input->post('name'),
-          'client' => $this->input->post('client'),
-          'corporate_name' => $this->input->post('corporate_name'),
-          'name' => $this->input->post('name'),
-          'pasport_no' => $this->input->post('pasport_no'),
-          'date_of_travel' => $this->input->post('date_of_travel')
-      );
+    $data = array(
+      'branch' => $this->input->post('branch'),
+      'sender_Staff' => $this->input->post('sender_Staff'),
+      'client' => $this->input->post('client'),
+      'corporate_name' => $this->input->post('corporate_name'),
+      'name' => $this->input->post('name'),
+      'pasport_no' => $this->input->post('pasport_no'),
+      'email' => $this->input->post('email'),
+      'phone' => $this->input->post('phone'),
+      'date_of_birth' => $this->input->post('date_of_birth'),
+      'date_of_travel' => $this->input->post('date_of_travel'),
+      'Country' => $this->input->post('Country'),
+      'PNR' => $this->input->post('PNR'),
+      'Ref' => $this->input->post('Ref'),
+      'Staff' => $this->input->post('Staff'),
+      'Fee' => $this->input->post('Fee'),
+      'departure' => $this->input->post('departure'),
+      'enquiry' => $this->input->post('enquiry'),
+      'Facilitation' => $this->input->post('Facilitation'),
+      'Charges' => $this->input->post('Charges'),
+      'Dispatch' => $this->input->post('Dispatch')
+  );
       $this->Model_Admin->update_application($id, $data);
-      redirect('Information/application_report');
+      redirect('information/application_report');
   }
   $data['allapplication'] = $this->Model_Admin->get_application($id);
   $this->load->view('admin/header', $data);
-  $this->load->view('Information/edit_application', $data);
+  $this->load->view('information/edit_application', $data);
   $this->load->view('admin/footer');
 }
 
@@ -112,7 +125,7 @@ public function delete_application($id)
     $this->load->model(array('Model_Front'));
     // echo'<pre>';print_r($data);exit;
     $this->load->view('admin/header', $data);
-    $this->load->view('Information/application_report', $data);
+    $this->load->view('information/application_report', $data);
     $this->load->view('admin/footer');
   }
   public function export_csv(){ 
@@ -163,7 +176,7 @@ public function delete_application($id)
     
         // Load the view to display the search result
         $this->load->view('admin/header', $data);
-        $this->load->view('Information/search_application', $data); 
+        $this->load->view('information/search_application', $data); 
         $this->load->view('admin/footer');
     }
 
@@ -217,7 +230,7 @@ public function select_form() {
       $data['show_table'] = $this->view_table();
 
       $this->load->view('admin/header1', $data);
-      $this->load->view('Information/VisaInformation', $data);
+      $this->load->view('information/VisaInformation', $data);
       }
       
       public function select_by_date_range() {

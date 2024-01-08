@@ -70,7 +70,7 @@ echo $qu['name'];?> </option>
                         </div>
                         </div>
                         <div class="col-lg-8 col-xs-8 col-md-8">
-                        <div class="visa-text"><?= substr($value['location'], 0,999)  ?> </div>
+                        <div class="visa-text"><?= substr($value['location'], 0,9909)  ?> </div>
                         </div>
                         </div>
                         <!-- 2 -->
@@ -92,7 +92,7 @@ echo $qu['name'];?> </option>
                         </div>
                         </div>
                         <div class="col-lg-8 col-xs-8 col-md-8">
-                        <div class="visa-text"> <?= substr($value['capital'], 0,90)  ?>  </div>
+                        <div class="visa-text"> <?= substr($value['capital'], 0,990)  ?>  </div>
                         </div>
                         </div>
                         <!-- 4 -->
@@ -125,7 +125,7 @@ echo $qu['name'];?> </option>
                         </div>
                         </div>
                         <div class="col-lg-8 col-xs-8 col-md-8">
-                        <div class="visa-text"> <?= substr($value['population'], 0,900)  ?></div>
+                        <div class="visa-text"> <?= substr($value['population'], 0,990)  ?></div>
                         </div>
                         </div>
                          <!-- 6 -->
@@ -147,7 +147,7 @@ echo $qu['name'];?> </option>
                         </div>
                         </div>
                         <div class="col-lg-8 col-xs-8 col-md-8">
-                        <div class="visa-text"> <?= substr($value['climate'], 0,900)  ?></div>
+                        <div class="visa-text"> <?= substr($value['climate'], 0,9200)  ?></div>
                         </div>
                         </div>
                          <!-- 6 -->
@@ -169,7 +169,7 @@ echo $qu['name'];?> </option>
                         </div>
                         </div>
                         <div class="col-lg-8 col-xs-8 col-md-8">
-                        <div class="visa-text"> <?= substr($value['airline'], 0,900)  ?></div>
+                        <div class="visa-text"> <?= substr($value['airline'], 0,9000)  ?></div>
                         </div>
                         </div>
                           <!-- 6 -->

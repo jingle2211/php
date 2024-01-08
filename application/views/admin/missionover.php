@@ -59,7 +59,7 @@ echo $qu['name'];?> </option>
                         </div>
                         </div>
                         <div class="col-lg-8 col-xs-8 col-md-8">
-                        <div class="visa-text"><?= substr($value['Name'], 0,90)  ?> </div>
+                        <div class="visa-text"><?= substr($value['Name'], 0,900)  ?> </div>
                         </div>
                         </div>
                         <!-- 2 -->
@@ -81,7 +81,7 @@ echo $qu['name'];?> </option>
                         </div>
                         </div>
                         <div class="col-lg-8 col-xs-8 col-md-8">
-                        <div class="visa-text"> <?= substr($value['pin_code'], 0,90)  ?>  </div>
+                        <div class="visa-text"> <?= substr($value['pin_code'], 0,900)  ?>  </div>
                         </div>
                         </div>
                         <!-- 4 -->
@@ -92,7 +92,7 @@ echo $qu['name'];?> </option>
                         </div>
                         </div>
                         <div class="col-lg-8 col-xs-8 col-md-8">
-                        <div class="visa-text"> <?= substr($value['Telephone'], 0,90)  ?> </div>
+                        <div class="visa-text"> <?= substr($value['Telephone'], 0,9900)  ?> </div>
                         </div>
                         </div>
                         <!-- 5 -->
@@ -103,7 +103,7 @@ echo $qu['name'];?> </option>
                         </div>
                         </div>
                         <div class="col-lg-8 col-xs-8 col-md-8">
-                        <div class="visa-text"> <?= substr($value['Fax'], 0,90)  ?></div>
+                        <div class="visa-text"> <?= substr($value['Fax'], 0,9090)  ?></div>
                         </div>
                         </div>
                         <!-- 6 -->
@@ -114,7 +114,7 @@ echo $qu['name'];?> </option>
                         </div>
                         </div>
                         <div class="col-lg-8 col-xs-8 col-md-8">
-                        <div class="visa-text"> <?= substr($value['Email'], 0,90)  ?></div>
+                        <div class="visa-text"> <?= substr($value['Email'], 0,900)  ?></div>
                         </div>
                         </div>
                         <!-- 7 -->
@@ -136,7 +136,7 @@ echo $qu['name'];?> </option>
                         </div>
                         </div>
                         <div class="col-lg-8 col-xs-8 col-md-8">
-                        <div class="visa-text"> <?= substr($value['Notes'], 0,1500)  ?></div>
+                        <div class="visa-text"> <?= substr($value['Notes'], 0,15000)  ?></div>
                         </div>
                         </div>
                 </div>

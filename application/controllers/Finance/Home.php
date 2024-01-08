@@ -42,7 +42,7 @@ class Home extends CI_Controller {
             $data["fetch_credit_p"] = $this->Home_model->fetch_credit_p($id);
             $data["fetch_sum_p"] = $this->Home_model->fetch_sum_p($id);
 
-
+            
             $this->load->view('finance/header', $data);
             $this->load->view('finance/d_c_view', $data);
             $this->load->view('finance/footer');

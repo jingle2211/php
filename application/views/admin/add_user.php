@@ -102,7 +102,7 @@ foreach ($branch as $qu) {
 </div>
 
 <div class="submit-area text-center">
-<button class="btn-hover submit-area2" type="submit"> <i class="fa fa-paper-plane" aria-hidden="true"></i>Submit</button>
+<button class="btn-hover submit-area2" type="submit">Submit</button>
 </div>    
     <!-- PAGE CONTENT ENDS -->
  </form>

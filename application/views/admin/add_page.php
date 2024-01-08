@@ -55,13 +55,18 @@
         <label for="Counrty">Enter Visa Type:</label>
         </div>
         <div class="form-group col-md-4">
-        <input type="text" id="visa_type" name="visa_type" placeholder="Visa Type" class="form-control">
+        <select name="visa_type" id="visa_type" class="form-control">
+        <option value="">Select visa_type</option>
+        <?php foreach ($dropdown as $item): ?>
+        <option value="<?php echo $item->name ; ?>"><?php echo $item->name; ?></option>
+        <?php endforeach; ?>
+        </select>
         </div>
-        <!-- </table> -->
+       
         </div>
         <label for="email_address">Enter Title:</label>
         <div class="form-group">
-        <input type="text" class="form-control title" id="title" placeholder="Title" name="title" required>
+        <input type="text" class="form-control title" id="title" placeholder="Title" name="title" required style="border:1px solid; padding-left:10px;">
         </div>
            <!-- Url Input -->
         <?php $link = "<span id='url'></span>" ?>
@@ -77,7 +82,7 @@
         </div>
         <label for="Description">Long Description:</label>
         <div class="form-group">
-        <textarea id="long_description" name="long_description" rows="10" cols="12" placeholder="Description"> </textarea>
+        <textarea id="editor1" name="long_description" rows="10" cols="12" placeholder="Description"> </textarea>
         </div>
         <label for="Note">Note:</label>
         <div class="form-group">
@@ -99,7 +104,7 @@
         <div class="form-group">
         <input type="text" class="form-control" placeholder="Keyword Discription" name="title2" required>
         </div>
-
+        
         <div class="form-group">
         <button class="btn-hover color-1" type="submit">Submit</button>
         </div>

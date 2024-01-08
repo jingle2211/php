@@ -12,7 +12,7 @@
     <div class="wellcome-block">
     <div class="container">
         <div class="about-title-area">
-        <h3 class="about-service-title">VISA FACILITATION SERVICES</h3>
+        <h3 class="about-service-title">VISA Facilitation Services</h3>
         <p class="discription">We are dedicated to providing exceptional customer service and personal attention to your Visa needs. For more than two decade, we've been a trusted partner of businesses and individuals and have handled thousands of travelers' vital documents with speed and care. Let us help get you there!</p> 
         </div> 
             <div class="row">
@@ -39,7 +39,7 @@
                         <div class="col-md-6">
                         <div class="service-block wc">
                         <!-- <a href="#"><i class="renticon renticon-car-small"></i></a> -->
-                        <h2 class="service-title">EMBASSIES APPROVED</h2>
+                        <h2 class="service-title">Embassies Approved</h2>
                         <p class="discription">IVS is recognized as a Pioneer and a leading authority in Visa Facilitation Services for Indian Citizens. We are authorized and approved by almost all diplomatic missions and VFS in India.</p>
                         </div><!-- /.service-block -->
                         </div><!-- /.col-md-6 -->
@@ -47,7 +47,7 @@
                                    <div class="col-md-6">
                                     <div class="service-block wc">
                                     <!-- <a href="#"><i class="renticon renticon-star"></i></a> -->
-                                    <h2 class="service-title">NO HIDDEN COSTS</h2>
+                                    <h2 class="service-title">No Hidden Costs</h2>
                                     <p class="discription">People often worry that using a Visa service means uncertainty about what everything will cost. Not at IVS. At IVS you will always be kept informed of any charges in a clear and easily understandable manner.</p>
                                     </div><!-- /.service-block -->
                                    </div><!-- /.col-md-6 -->
@@ -63,7 +63,7 @@
                                    <div class="col-md-6">
                                     <div class="service-block wc">
                                     <!-- <a href="#"><i class="renticon renticon-carefull-activity"></i></a> -->
-                                    <h2 class="service-title">FAST, EASY & SECURE</h2>
+                                    <h2 class="service-title">Fast, Easy & Secure</h2>
                                     <p class="discription">We provide fast, Easy, secure and reliable visa service by removing errors, Consulate Rejections and delays in trips. IVS allows visibility of transaction at all times with real time updates throughout the process .</p>
                                     </div><!-- /.service-block -->
                                    </div><!-- /.col-md-6 -->

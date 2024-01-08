@@ -25,8 +25,9 @@ class Admin extends CI_Controller
          'title' => 'Dashboard',
          'user' => $this->db->get_where('user', ['email' => $this->session->userdata('email')])->row_array(),
          'user_role' => $this->db->get('user_role')->num_rows(),
-         'user_member' => $this->db->get_where('user', ['role_id' => 2])->num_rows(),
-    
+         //'user_member' => $this->db->get_where('user', ['role_id' => 2])->num_rows(),
+         'user_member' => $this->db->get('user')->num_rows(),
+
          'menu' => $this->db->get('user_menu')->num_rows(),
          'sub_menu' => $this->db->get('user_sub_menu')->num_rows(),
          'report' => $this->db->get('user_report')->num_rows(),
@@ -334,17 +335,19 @@ class Admin extends CI_Controller
     endif;
   }
 
-  //////////////    Add country pages     //////////////////////////
+  //////////////    Add country and visa type     //////////////////////////
 
   public function add_country()
   {
     $this->load->view('admin/add_country');
     //Check submit button 
     if ($this->input->post('save')) {
-      //get form's data and store in local varable
+      
       $n = $this->input->post('name');
       $this->Hello_Model->saverecords($n);
-      echo "Records Saved Successfully";
+      $this->session->set_flashdata('success', '<b> country Added successfully!</b>');
+      redirect('Admin/manage_country');
+  
     }
   }
   public function add_visa()
@@ -355,11 +358,13 @@ class Admin extends CI_Controller
     //Check submit button 
     if ($this->input->post('save')) {
       //print_r($_POST);die;
-      //get form's data and store in local varable
+      
       $name = $this->input->post('name');
       $ci = $this->input->post('country');
       $this->Visa_model->insertVisa($ci, $name);
-      echo "Records Saved Successfully";
+      $this->session->set_flashdata('success', '<b> Visa Type Added successfully!</b>');
+      redirect('Admin/manage_visa');
+     
     }
   }
 
@@ -390,7 +395,7 @@ public function edit_visa($id) {
       $data = array(
          // 'country' => $this->input->post('country'),
           'country_id' => $this->input->post('country_id'),
-          'name' => $this->input->post('name')
+          'name' => $this->input->post('name')        
       );
       $this->Model_Admin->update_visa($id, $data);
       redirect('admin/manage_visa');
@@ -1019,6 +1024,8 @@ public function add_user()
     $this->load->model('Model_Admin');
     // Call the function to get the dropdown data
     $data['dropdown_data'] = $this->Model_Admin->getDropdownData();
+    $data['dropdown'] = $this->Model_Admin->getDropdown();
+    
     $data['admin'] = $this->Model_Admin->get_admin();
     $this->load->view('admin/add_page', $data);
     if ($this->input->post()):
@@ -1126,6 +1133,7 @@ public function add_user()
   {
     $this->load->model('Model_Admin');
     $data['dropdown_data'] = $this->Model_Admin->getDropdownData();
+    $data['dropdown'] = $this->Model_Admin->getDropdown();
     // $this->load->view('admin/add_packages', $data);
     $data['admin'] = $this->Model_Admin->get_admin();
     $this->load->view('admin/add_packages', $data);
@@ -1151,7 +1159,7 @@ public function add_user()
   public function edit_packages($id) {
     if ($this->input->post('submit')) {
         $data = array(
-           // 'country' => $this->input->post('country'),
+            'country' => $this->input->post('country'),
             'visa_type' => $this->input->post('visa_type'),
             'validity' => $this->input->post('validity'),
             'processing' => $this->input->post('processing'),
@@ -1159,10 +1167,6 @@ public function add_user()
             'servicefee' => $this->input->post('servicefee'),
             'GST' => $this->input->post('GST'),
             'totalcost' => $this->input->post('totalcost')
-            //'climate' => $this->input->post('climate'),
-            //'language' => $this->input->post('language'),
-            //'airline' => $this->input->post('airline'),
-            //'holiday' => $this->input->post('holiday'),
            // 'airport' => $this->input->post('airport')
         );
         $this->Model_Admin->update_packages($id, $data);
@@ -1272,15 +1276,28 @@ public function edit_application($id) {
   if ($this->input->post('submit')) {
       $data = array(
           'branch' => $this->input->post('branch'),
-          'sender_Staff' => $this->input->post('name'),
+          'sender_Staff' => $this->input->post('sender_Staff'),
           'client' => $this->input->post('client'),
           'corporate_name' => $this->input->post('corporate_name'),
           'name' => $this->input->post('name'),
           'pasport_no' => $this->input->post('pasport_no'),
-          'date_of_travel' => $this->input->post('date_of_travel')
+          'email' => $this->input->post('email'),
+          'phone' => $this->input->post('phone'),
+          'date_of_birth' => $this->input->post('date_of_birth'),
+          'date_of_travel' => $this->input->post('date_of_travel'),
+          'Country' => $this->input->post('Country'),
+          'PNR' => $this->input->post('PNR'),
+          'Ref' => $this->input->post('Ref'),
+          'Staff' => $this->input->post('Staff'),
+          'Fee' => $this->input->post('Fee'),
+          'departure' => $this->input->post('departure'),
+          'enquiry' => $this->input->post('enquiry'),
+          'Facilitation' => $this->input->post('Facilitation'),
+          'Charges' => $this->input->post('Charges'),
+          'Dispatch' => $this->input->post('Dispatch')
       );
       $this->Model_Admin->update_application($id, $data);
-      redirect('Admin');
+      redirect('admin/application_report');
   }
   $data['allapplication'] = $this->Model_Admin->get_application($id);
   $this->load->view('admin/edit_application', $data);
@@ -1833,7 +1850,7 @@ public function groups() {
   $data['groups'] = $this->Model_Admin->get_groups();
 
   // Load view to display groups and create a new group
-  $this->load->view('Admin/groups', $data);
+  $this->load->view('admin/groups', $data);
 }
 
 public function create_group() {
@@ -1847,6 +1864,8 @@ public function create_group() {
 
 public function show_emails($group_id) {
   // Fetch emails associated with the given group ID
+  $data['email'] = $this->Model_Admin->get_all_email();
+  $data['group'] = $this->Model_Admin->get_all_group();
   $data['group_emails'] = $this->Model_Admin->get_emails_by_group($group_id);
   $data['group_id'] = $group_id;
 
@@ -1859,11 +1878,18 @@ public function show_emails($group_id) {
 
 public function add_email_to_group($group_id) {
   // Handle form submission to add an email to a group
-  $email = $this->input->post('email');
+  $email = $this->input->post('email'); // Change '[email]' to 'email'
+  // Check if $email is an array and handle accordingly before passing it to the model function
+  if(is_array($email)) {
+      // If $email is an array, you might need to handle it based on your logic,
+      // such as selecting the first email or looping through multiple emails
+      $email = $email[0]; // For instance, selecting the first email if it's an array
+  }
   $this->Model_Admin->add_email_to_group($email, $group_id);
 
   redirect('admin/show_emails/' . $group_id);
 }
+
 
 ///////////////     Email Group end   //////////////
 
@@ -2285,7 +2311,7 @@ public function edit_add_mission($id) {
       redirect('admin/missionover_detail');
   }
   $data['details'] = $this->Model_Admin->get_mission($id);
-  $this->load->view('Admin/edit_add_mission', $data);
+  $this->load->view('admin/edit_add_mission', $data);
 }
 
 public function delete_add_mission($id)
@@ -2390,7 +2416,7 @@ public function select_form() {
       $data['Model_Admin'] = $this->Model_Admin->getRows();
       $data['subscribers'] = $this->Model_Admin->getAllSubscribers();
       // Load the list page view
-      $this->load->view('Admin/EmailSubscriber', $data);
+      $this->load->view('admin/EmailSubscriber', $data);
   }
   
   public function import(){

@@ -501,6 +501,18 @@ return 0;
         return false;
     }
 }
+
+public function getDropdown() {
+  // Fetch data from the database
+  $query = $this->db->get('visatype');
+  // Check if any records exist
+  if ($query->num_rows() > 0) {
+      // Return the result as an array of objects
+      return $query->result();
+  } else {
+      return false;
+  }
+}
 /////////////////////////////////////////////////////////////////////
 ////////////////       packages model               ///////////////////
 
@@ -1114,6 +1126,8 @@ public function student_list()
   return $groupId;
  }
 
+ 
+
 ///////   Email Group  ////////
 public function create_group($group_name) {
   $data = array('group_name' => $group_name);
@@ -1127,24 +1141,25 @@ public function get_groups() {
 
 public function add_email_to_group($email, $group_id) {
   $data = array(
-      'email_address' => $email,
+      'email_address' => $email, 
       'group_id' => $group_id
   );
   $this->db->insert('emails', $data);
   return $this->db->insert_id();
 }
 
+
 public function get_emails_by_group($group_id) {
   $this->db->where('group_id', $group_id);
   return $this->db->get('emails')->result_array();
 }
 
-// public function getEmailsByGroup($group_id) {
-//   $this->db->select('email_address');
-//   $this->db->where('group_id', $group_id);
-//   $query = $this->db->get('emails');
-//   return $query->result_array();
-// }
+function get_all_email(){
+	//$this->db->where('status','1');
+	$this->db->order_by('id','DESC');
+  $qu =	$this->db->get('subscribers');
+return $qu->result_array();
+}
 
 function get_all_group(){
 	//$this->db->where('status','1');

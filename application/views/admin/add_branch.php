@@ -65,18 +65,10 @@
                     </div>
                     </div>      
         <div class="row">
-        <div class="col-lg-3 col-md-3 col-xs-12">
-        <lable>IsActive</lable>
-        </div>
-        <div class="col-lg-3 col-md-3 col-xs-12">
-        <div class="form-check">
-        <input class="form-check-input" type="checkbox" name="inactive" id="inactive">
-        <label class="form-check-label" for="inactive"> </label>
-        </div>
-        </div>
+       
         </div>
   <div class="submit-area text-center">
-  <button class="btn-hover submit-area2" type="submit"> <i class="fa fa-paper-plane" aria-hidden="true"></i>Submit</button>
+  <button class="btn-hover submit-area2" type="submit">Submit</button>
   </div>
   </form>
   </div>

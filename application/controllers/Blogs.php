@@ -24,7 +24,7 @@ function fetch()
             foreach($data->result() as $row)
              {
                 $output .= '
-                  <div class="col-md-6 col-sm-6 col-xs-6">
+                  <div class="col-md-6 col-sm-6 col-xs-12">
                                         <article class="post">
                                             <figure class="post-thumb">
                                                 <a href="'.base_url().'blogs/'.$row->slug.'">

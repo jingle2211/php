@@ -94,13 +94,13 @@
                             <dd class=" infodays_dd"><span class="infodays">up to 90 days</span><span class="not required">required</span></dd><dd class="active_tab_corn"></dd>   
                         </dl> 
                         <dl id="visa_group_2" class=" required tab-business-visa" data-visa_group_num="2" data-visa-validity="date_of_visa_issue" data-ecommerce-product="{&quot;name&quot;:&quot;Australia visa&quot;,&quot;category&quot;:&quot;Business visa&quot;}">
-                            <dt class=""><a href=".../#!australia-business-visa" class="dd_link" title="Australia Business Visa Services in India. Application, Requirements. Apply Online. " data-meta_description="Australian Business Visa application, requirements for Indian citizens. Travel Business Visa to Australia from India. Apply online.">Business visa</a>
+                            <dt class=""><a href="#!australia-business-visa" class="dd_link" title="Australia Business Visa Services in India. Application, Requirements. Apply Online. " data-meta_description="Australian Business Visa application, requirements for Indian citizens. Travel Business Visa to Australia from India. Apply online.">Business visa</a>
                         </dt>
                             <dd class=""><span class="required">required</span></dd>
                             <dd class="active_tab_corn"></dd>   
                         </dl> 
                         <dl id="visa_group_23" class=" no_display not required tab-business-visa" data-visa_group_num="3" data-visa-validity="date_of_visa_issue" data-ecommerce-product="{&quot;name&quot;:&quot;Australia visa&quot;,&quot;category&quot;:&quot;Business visa&quot;}">
-                        <dt class=" infodays_dd"><a href=".../#!australia-business-visa-up-to-90-days" class="dd_link" title="data-meta_description=">Business visa</a></dt>
+                        <dt class=" infodays_dd"><a href="/#!australia-business-visa-up-to-90-days" class="dd_link" title="data-meta_description=">Business visa</a></dt>
                         <dd class=" infodays_dd"><span class="infodays">up to 90 days</span><span class="not required">required</span></dd>
                         <dd class="active_tab_corn"></dd>   
                     </dl>   
@@ -427,7 +427,8 @@
 </div>
 </div>
 </div> 
-
+</div>
+</div> 
 </div>
 </div> 
 

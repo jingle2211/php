@@ -12,7 +12,7 @@
   <div class="wellcome-block">
     <div class="container">
         <div class="about-title-area">
-        <h3 class="about-service-title">VISA FACILITATION SERVICES</h3>
+        <h3 class="about-service-title">Visa Facilitation Services</h3>
         <p class="discription">We are dedicated to providing exceptional customer service and personal attention to your Visa needs. For more than two decade, we've been a trusted partner of businesses and individuals and have handled thousands of travelers' vital documents with speed and care. Let us help get you there!</p> 
         </div> 
             <div class="row">
@@ -24,7 +24,7 @@
 
                 <div class="col-md-7">
                 <div class="service-block wc">
-                    <h2 class="service-title">WE ASSIST OUR CUSTOMER’S VISA PROCESSING WITH THE FOLLOWING</h2>
+                    <h2 class="service-title">We Assist Our Customer’s Visa Processing with The Following</h2>
                     <p class="discription">Professional, reliable and expert customer service.</p>
                     
                     </div><!-- /.service-block -->

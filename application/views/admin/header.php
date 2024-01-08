@@ -99,9 +99,9 @@
             <a href="#" onClick="return false;" class="menu-toggle"><i class="fa fa-edit"></i>
             <span>Application</span> </a>
             <ul class="ml-menu">
-            <li> <a href="<?= base_url('Information/add_application'); ?>"> Add / Edit Application </a></li>
-            <li> <a href="<?= base_url('Information/application_report'); ?>">Visa Application Report</a> </li> 
-            <li> <a href="<?= base_url('Information/search_application'); ?>">Search Application</a> </li>                           
+            <li> <a href="<?= base_url('information/add_application'); ?>"> Add / Edit Application </a></li>
+            <li> <a href="<?= base_url('information/application_report'); ?>">Visa Application Report</a> </li> 
+            <li> <a href="<?= base_url('information/search_application'); ?>">Search Application</a> </li>                           
             </ul>
             </li>
             <!-- <li class="bb">

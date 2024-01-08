@@ -42,7 +42,7 @@
             
              <?php echo form_error('password','<span class="help-block text-warning" >','</span>'); ?>
              <?php echo form_error('email','<span class="help-block text-warning" >','</span>'); ?>
-              <form class="pt-3" action="<?php echo base_url() ?>finance/Users/login" method="post">
+              <form class="pt-3" action="<?php echo base_url() ?>Finance/Users/login" method="post">
                 <div class="form-group">
                     <input type="email" name="email" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Email">
                 </div>

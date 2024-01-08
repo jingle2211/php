@@ -47,6 +47,11 @@
                                 </div>
                                 <div class="body">
                                 <form method="post">
+                                <label for="email_address">Country</label>
+                                    <div class="form-group">
+                                    <input type="text"  name="country" class="form-control title" value="<?= $details->country; ?>" style="border:1px solid; padding-left:10px;"> 
+                                        
+                                    </div>
                                 <label for="email_address">Visa Type</label>
                                     <div class="form-group">
                                     <input type="text"  name="visa_type" class="form-control title" value="<?= $details->visa_type; ?>" style="border:1px solid; padding-left:10px;"> 

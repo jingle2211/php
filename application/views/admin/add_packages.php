@@ -49,17 +49,25 @@
             </select>
              </div>
             <div class="form-group col-md-2">
-            <label>Enter Visa Type:</label>
+            <label>Select Visa Type:</label>
             </div>
             <div class="form-group col-md-4">
+        <select name="visa_type" id="visa_type" class="form-control">
+        <option value="">Select visa_type</option>
+        <?php foreach ($dropdown as $item): ?>
+        <option value="<?php echo $item->name ; ?>"><?php echo $item->name; ?></option>
+        <?php endforeach; ?>
+        </select>
+        </div>
+            <!-- <div class="form-group col-md-4">
             <input type="text" class="form-control title" placeholder="Visa Type" id="visa_type" name="visa_type" placeholder="Visa Type">
-            </div>
+            </div> -->
             </div>
         <div class="col-lg-4 col-md-4">
         <label for="email_address">Enter Validity:</label>
         </div>
         <div class="form-group">
-        <input type="text" class="form-control title" id="validity" placeholder="Validity" name="validity" required>
+        <input type="text" class="form-control title" id="validity" placeholder="Validity" name="validity" required style="border:1px solid; padding-left:10px;">
         </div>
    <!-- Url Input -->
         <div class="col-lg-4 col-md-4">

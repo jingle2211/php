@@ -123,8 +123,8 @@ foreach ($Staff as $qu) {
 <!-- Display your report data -->
 
   <div class="body">
-  <div class="table-responsive">
-  <table class="table table-bodered table-hover js-basic-example contact_list">
+  <div class="">
+  <table class="table">
   <thead>
   <tr>
   <th>Docket_No</th>

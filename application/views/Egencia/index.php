@@ -71,10 +71,10 @@
 </section>
 
 <div class="container">
-  <h2 style="text-align:center">EGENCIA VISA HELP DESK</h2>  
+  <h3 style="text-align:center">EGENCIA VISA HELP DESK</h3>  
   <div class="row">
   <div class="col-md-6">
-  <h3> North, West &amp; East Region</h3>
+  <h3><u> North, West &amp; East Region</u></h3>
   <p> Mr. Manveer </p>
   <p class="tlp-email" style="text-align:left;">Email:<a href="mailto:egencia@ivsvisa.com"><span class="tlp-email"> <b> egencia@ivsvisa.com</b></span></a></p>
   <p> Contact No: + 91 9999199545</p>
@@ -82,17 +82,17 @@
   </div>
 	  	 
 	<div class="col-md-6">
-  <h3>Southern Region</h3>
+  <h3><u>Southern Region </u></h3>
   <p>Mr. Vinesh Shanta </p>
   <p class="tlp-email" style="text-align:left;">Email:<a href="mailto:egencia.south@ivsvisa.com"><span class="tlp-email"> <b>  egencia.south@ivsvisa.com</b></span></a></p>
   <p> Contact No: + 91 8217430745</p>
 	<p>Working Hours/Timings: 09:30 hrs to 18:00 Hrs (Monday to Friday)</p>
   </div>
   </div>
-
+ <div class="row clearfix"><br><br><br></div>
   <div class="row">
   <div class="col-md-6">
-  <h3>Reporting Manager</h3>
+  <h3><u>Reporting Manager</u></h3>
   <p> Ms. Rupa Chatterjee </p>
   <p class="tlp-email" style="text-align:left;">Email:<a href="mailto:rupa.chatterjee@ivsvisa.com"><span class="tlp-email"> <b>rupa.chatterjee@ivsvisa.com</b></span></a></p>
   <p> Contact No: +91 9830242977</p>
@@ -101,7 +101,7 @@
   </div>
     
 	<div class="text">          
-  <p>If you have any immediate query/concerns of need Visa Information for any country, please contact us at <a href="mailto: Egencia@ivsvisa.com"><span class="tlp-email"><b> Egencia@ivsvisa.com</b></span></a> and call us on above mentioned contact details </p>
+  <p><span><b>Note:-</b></span> If you have any immediate query/concerns of need Visa Information for any country, please contact us at <a href="mailto: Egencia@ivsvisa.com"><span class="tlp-email"><b> Egencia@ivsvisa.com</b></span></a> and call us on above mentioned contact details </p>
   <p>We look forward to serving you and at IVS; we are committed to offering the highest level of service.</p><br>
   <span>Thank you for working with us with us </span>
   </div> 
@@ -132,7 +132,7 @@
         <div class="container">
           <div class="row row-30">
             <div class="col-md-4 col-xl-5">
-            <div class="pr-xl-4"><h4>DISCLAIMER NOTICE:</h4>
+            <div class="pr-xl-4"><h4>Disclaimer Notice</h4>
             <p>All information and contents of this site and pages included are copyrighted by international visa service. Any use of material from this site without expressed consent from IVS is illegal. Please note IVS is not an official government website nor is affiliated with any State Department or Embassy. IVS accepts no responsibility legal</p>   
             </div>
             </div>

@@ -250,7 +250,7 @@ foreach ($branch as $qu) {
                
                     <div class="col-lg-9 col-md-9 col-xs-12 wow slideInUp" data-wow-duration="2s" data-wow-delay="1s">
                     <div class="submit-area text-center">
-                    <button class="btn-hover submit-area2" type="submit"> <i class="fa fa-paper-plane" aria-hidden="true"></i>Submit</button>
+                    <button class="btn-hover submit-area2" type="submit">Submit</button>
                      </div>
                     </div>
               

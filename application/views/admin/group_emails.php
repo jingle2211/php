@@ -15,33 +15,46 @@
             </div>
             </div>
             </div>
+  
+
 <div class="container py-3">
-
-
-<h2>Emails for this Group</h2>
-<ul>
-    <?php foreach ($group_emails as $email): ?>
-        <li><?php echo $email['email_address']; ?></li>
-    <?php endforeach; ?>
-</ul>
-
-<h2>Add Email on this Group</h2>
+<h2>Emails in Group</h2>
 <form method="post" action="<?php echo base_url('admin/add_email_to_group/' . $group_id); ?>">
-    <input type="text" name="email" placeholder="Enter email" class="news col-md-6" Required/>
-    <button type="submit">Add Email</button>
+<div class="row">
+                        <div class="col-lg-2 col-md-2">
+                          <label>Group: <span>*</span></label>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-xs-12">
+                        <select name="group" id="group" aria-placeholder="Select Branch" class="form-control" required >
+                  <option value=""> Select Group </option>
+             <?php
+foreach ($group as $qu) {
+  ?>
+  <option value= '<?php echo $qu['group_name']; ?>'>
+  <?php
+    echo $qu['group_name'];?> </option>
+    <?php
+}
+?>
+</select>
+</div> 
+    <div class="col-lg-4 col-md-4 col-xs-12">
+    <label>Select Email(s):</label>
+                        
+        <div class="checkbox-group">
+        <?php foreach ($email as $qu) { ?>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="email[]" value="<?= $qu['email']; ?>">
+                    <?= $qu['email']; ?>
+                </label>
+            </div>
+        <?php } ?>
+    </div>
+ </div>
+</div>
+ <button type="submit">Add Email</button>
 </form>
-
-<!-- Display all groups -->
-<h2>Email Group</h2>
-<ul>
-    <?php foreach ($groups as $group): ?>
-        <li>
-            <a href="<?php echo base_url('admin/show_emails/' . $group['id']); ?>">
-                <?php echo $group['group_name']; ?>
-            </a>
-        </li>
-    <?php endforeach; ?>
-</ul>
 </div>
 
  </div>

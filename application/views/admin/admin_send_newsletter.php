@@ -27,18 +27,11 @@
         <?= $this->session->flashdata('success'); ?>
       </div>
     <?php } ?>
-    <?php if ($this->session->flashdata('error')) { ?>
-      <div class="alert bg-danger alert-dismissible" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-          <span aria-hidden="true">×</span>
-        </button>
-        <?= $this->session->flashdata('error'); ?>
-      </div>
-    <?php } ?>
+   
 
     <h4 class="text-center"> Send Newsletter </h4>
 
-    <form action="<?php echo base_url('admin/send_newsletter'); ?>" method="post">
+    <form action="<?php echo base_url('admin/send_newsletter/'); ?>" method="post">
     <div class="row">
         <div class="col-lg-2 col-md-2">
           <label for="group">Select Group:</label>

@@ -25,13 +25,7 @@
          <?= $this->session->flashdata('success'); ?>
          </div>
         <?php  } ?>
-        <?php if($this->session->flashdata('error')){ ?> 
-        <div class="alert bg-danger alert-dismissible" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">×</span> </button>
-        <?= $this->session->flashdata('error'); ?>
-       </div>
-        <?php  } ?>
+    
       <div class="row clearfix"><br>
       <div class="col-lg-12 col-md-12">               
       <div class="tab-content">                    
